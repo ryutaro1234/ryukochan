@@ -183,7 +183,6 @@ nav ul li{
   margin-top: 2px;
   display: flex;
   flex-direction: column;
-  border-bottom: .5px solid #ddd;
 }
 
 nav ul li a{
