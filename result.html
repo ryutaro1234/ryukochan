@@ -3,139 +3,137 @@
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website">
 
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="検索結果" />
-	<link rel="icon" type="image/x-icon" href="https://ryutaro1234.github.io/demo-site/images/favicon.png" />
-	<title>Result - DEMO Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="検索結果" />
+  <link rel="icon" type="image/x-icon" href="https://www.ryukochan.com/images/favicon.png" />
+  <title>Result - Ryukochan</title>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 
-	<link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-	<!-- YOU NEED UPDATE Jquery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+  <!-- YOU NEED UPDATE Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 
-	<link rel="apple-touch-icon" sizes="180x180" href="https://ryutaro1234.github.io/demo-site/images/logo01.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.ryukochan.com/images/logo01.png" />
 
-	<meta property="og:url" content="https://ryutaro1234.github.io/demo-site/index.html" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Result - DEMO Site" />
-	<meta property="og:description" content="検索結果" />
-	<meta property="og:image" content="https://ryutaro1234.github.io/demo-site/images/logo01.png" />
+  <meta property="og:url" content="https://www.ryukochan.com/result.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Result - DEMO Site" />
+  <meta property="og:description" content="検索結果" />
+  <meta property="og:image" content="https://www.ryukochan.com/images/logo01.png" />
 
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@ryutarodayo1234" />
-	<meta name="twitter:creator" content="@ryutarodayo1234" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ryutarodayo1234" />
+  <meta name="twitter:creator" content="@ryutarodayo1234" />
 
 </head>
 
 <body>
-	<header>
-		<h1 class="header"><a href="https://ryutaro1234.github.io/demo-site/">DEMO Site</a></h1>
+  <header>
+    <h1 class="header"><a href="https://www.ryukochan.com/demo-site/">DEMO Site</a></h1>
 
-		<div id="nav">
-			<span class="nav_toggle">
-				<i></i>
-				<i></i>
-				<i></i>
-			</span>
-		</div>
+    <div id="nav">
+      <span class="nav_toggle">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </div>
 
-		<nav class="nav">
-			<ul class="nav_menu_ul">
-        <li class="nav_menu_li"><a class="links-nav" href="https://ryutaro1234.github.io/demo/">DEMO Home</a></a></li>
-				<li class="nav_menu_li"><a class="links-nav" href="https://ryutaro1234.github.io/demo-site/index.html">Home</a></li>
-				<li class="nav_menu_li"><a class="links-nav" href="https://ryutaro1234.github.io/demo-site/about.html">About</a></li>
-				<li class="nav_menu_li"><a class="links-nav" href="https://ryutaro1234.github.io/demo-site/search.html">Search</a></li>
-			</ul>
-		</nav>
-	</header>
+    <nav class="nav">
+      <ul class="nav_menu_ul">
+        <li class="nav_menu_li"><a class="links-nav" href="https://www.ryukochan.com/">Home</a></a></li>
+        <li class="nav_menu_li"><a class="links-nav" href="https://www.ryukochan.com/search">Search</a></li>
+      </ul>
+    </nav>
+  </header>
 
-	<div id="container">
+  <div id="container">
 
-		<main>
-			<header></header>
+    <main>
+      <header></header>
 
-			<section class="result_contents">
-				<h2 class="result_title">検索結果</h2>
-				<ul id="result">
+      <section class="result_contents">
+        <h2 class="result_title">検索結果</h2>
+        <ul id="result">
 
-				</ul>
-			</section>
+        </ul>
+      </section>
 
-			<script>
-				let v = new URLSearchParams(window.location.search);
-				v = v.get('search-key');
-				const urlLists = [
-					"https://ryutaro1234.github.io/daw-world/about.html",
-					/* Your URL */
-				];
+      <script>
+        let v = new URLSearchParams(window.location.search);
+        v = v.get('search-key');
+        const urlLists = [
+          "https://www.ryukochan.com/",
+          /* Your URL */
+        ];
 
-				$.each(urlLists, function(i){
-					$.ajax({
-						url　: urlLists[i],
-						dataType : 'html',
-						success　: function(data){
+        $.each(urlLists, function(i){
+          $.ajax({
+            url　: urlLists[i],
+            dataType : 'html',
+            success　: function(data){
 
-							if( $(data).find("main").text().indexOf(v) !== -1){
+              if( $(data).find("main").text().indexOf(v) !== -1){
 
-								$('<li><a href="' + urlLists[i] + '">' +$(data).find(".search-style").text() + '</a></li>').appendTo('#result');
-							}
-						},
+                $('<li><a href="' + urlLists[i] + '">' +$(data).find(".search-style").text() + '</a></li>').appendTo('#result');
+              }
+            },
 
-						error: function(data){
-							console.log("error")
-						}
-					});
-				});
-			</script>
-		</main>
-	</div>
+            error: function(data){
+              console.log("error")
+            }
+          });
+        });
+      </script>
+    </main>
+  </div>
 
-	<footer class="footer outer-block">
-		<div class="logo">
-			<p><b><a href="https://ryutaro1234.github.io/demo-site/">DEMO Site</a></b></p>
-		</div>
+  <footer class="footer outer-block">
+    <div class="logo">
+      <p><b><a href="https://www.ryukochan.com/">Ryukochan</a></b></p>
+    </div>
 
-		<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-			<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-				<a itemprop="item" href="https://ryutaro1234.github.io/demo-site/">
-						<span itemprop="name">Home</span>
-				</a>
-				<meta itemprop="position" content="1" />
-			</li>
+    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://www.ryukochan.com/">
+            <span itemprop="name">Home</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
 
-			<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-				<a itemprop="item" href="https://ryutaro1234.github.io/demo-site/search.html">
-						<span itemprop="name">Search</span>
-				</a>
-				<meta itemprop="position" content="2" />
-			</li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://www.ryukochan.com/search">
+            <span itemprop="name">Search</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
 
-			<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-				<a itemprop="item" href="https://ryutaro1234.github.io/demo-site/result.html">
-						<span itemprop="name">Result</span>
-				</a>
-				<meta itemprop="position" content="2" />
-			</li>
-		</ol>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="https://www.ryukochan.com/result">
+            <span itemprop="name">Result</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ol>
 
-		<ul>
-			<li class="nav_menu_li"><a href="https://ryutaro1234.github.io/demo-site/about.html">About</a></li>
-		</ul>
+    <ul>
+      <li class="nav_menu_li"><a href="https://www.ryukochan.com/">Home</a></li>
+    </ul>
 
-		<a href="//twitter.com/share" class="twitter-share-button" data-text="Result - DEMO Site" data-url="https://ryutaro1234.github.io/demo-site/result.html" data-lang="Tweet"></a>
-		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a href="//twitter.com/share" class="twitter-share-button" data-text="Result - DEMO Site" data-url="https://www.ryukochan.com/result" data-lang="Tweet"></a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-		<form action="https://ryutaro1234.github.io/demo-site/result.html" autocomplete="on" method="get">
-			<input type="text" name="search-key" />
-			<button type="submit"><img src="https://ryutaro1234.github.io/demo-site/images/search.png" /></button>
-		</form>
+    <form action="https://www.ryukochan.com/result" autocomplete="on" method="get">
+      <input type="text" name="search-key" />
+      <button type="submit"><img src="https://www.ryukochan.com/images/search.png" /></button>
+    </form>
 
-		<p class="copy">&copy; 2021 DEMO Site</p>
-	</footer>
+    <p class="copy">&copy; 2021 DEMO Site</p>
+  </footer>
 </body>
 </html>
