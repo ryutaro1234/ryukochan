@@ -231,7 +231,8 @@ background: #ddd;
 
 
 footer{
-	background: #333333;
+  border-top: 5px solid #333;
+	background: #fff;
 	padding: .5rem;
 	font-size: 75%;
 }
@@ -239,7 +240,7 @@ footer{
 
 footer p{
 	text-align: center;
-	color: #ffffff;
+	color: #333;
 }
 
 @media screen and (min-width: 600px) {
