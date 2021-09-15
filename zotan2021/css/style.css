@@ -8,6 +8,7 @@ a{
 color: #4682b4;
 }
 
+
 html{
 	scroll-behavior: smooth;
 	overflow: auto;
@@ -18,6 +19,10 @@ body {
 	font-family: sans-serif;
 	line-height: 1.6rem;
 	backgroumd: #ddd;
+}
+
+.search-style{
+  display: none;
 }
 
 img{
