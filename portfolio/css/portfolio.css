@@ -16,6 +16,10 @@ body {
   line-height: 1.6rem;
 }
 
+.searchstyle{
+  display: none;
+}
+
 .scroll-up{
   opacity: 0;
   visibility: hidden;
@@ -809,7 +813,7 @@ footer p{
 }
   #graphics{
   font-size: 100px;
-  right: -2%;
+  right: 10%;
 }
 
   #profile{
