@@ -7,4 +7,4 @@ RewriteBase /
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.+)$ $1\.html
 
-Redirect / "https://www.ryukochan.com/portfolio/"
+Redirect / "https://ryutaro1234.github.io/portfolio/"
