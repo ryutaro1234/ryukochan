@@ -6,3 +6,5 @@ ErrorDocument 404 /404
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.+)$ $1\.html
+
+Redirect / "https://www.ryukochan.com/portfolio/"
