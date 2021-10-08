@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DEMO" />
+  <title>DEMO</title>
+
+  <link rel="stylesheet" href="piano.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="main.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <h1 class="header"><a href="https://ryutaro1234.github.io/demo/">DEMO Site</a></h1>
+  </header>
+
+  <div id="container">
+      <main>
+        <article>
+          <section>
+
+            <div class="piano-wrapper">
+              <ul class="piano">
+                <li class="key">
+                  <span class="white-key" id="c3" onclick="c3()"><i>C3</i></span>
+                  <span class="black-key" id="1cis"><i></i></span>
+                </li>
+                <li class="key">
+                  <span class="white-key" id="1d" onclick="d3()"><i>D3</i></span>
+                  <span class="black-key" id="1dis"><i></i></span>
+                </li>
+                <li class="key">
+                  <span class="white-key" id="1e" onclick="e3()"><i>E3</i></span>
+                </li>
+                <li class="key">
+                  <span class="white-key" id="1f" onclick="f3()"><i>F3</i></span>
+                  <span class="black-key" id="1fis"><i></i></span>
+                </li>
+                <li class="key">
+                  <span class="white-key" id="1g" onclick="g3()"><i>G3</i></span>
+                  <span class="black-key" id="1gis"><i></i></span>
+                </li>
+                <li class="key">
+                  <span class="white-key" id="1a" onclick="a3()"><i>A3</i></span>
+                  <span class="black-key" id="1ais"><i></i></span>
+                </li>
+                <li class="key">
+                  <span class="white-key" id="1b" onclick="b3()"><i>B3</i></span>
+                </li>
+              </ul>
+              <ul class="piano">
+                <li class="key">
+                  <span class="white-key" id="2c" onclick="c4()"><i>C4</i></span>
+                  <span class="black-key"><i></i></span>
+                </li>
+                <li class="key">
+                  <span class="white-key" id="2d" onclick="d4()"><i>D4</i></span>
+                  <span class="black-key"><i></i></span>
+                </li>
+                <li class="key">
+                  <span class="white-key" id="2e" onclick="e4()"><i>E4</i></span>
+                </li>
+                <li class="key">
+                  <span class="white-key" id="2f" onclick="f4()"><i>F4</i></span>
+                  <span class="black-key"><i></i></span>
+                </li>
+                <li class="key">
+                  <span class="white-key" id="2g" onclick="g4()"><i>G4</i></span>
+                  <span class="black-key"><i></i></span>
+                </li>
+                <li class="key">
+                  <span class="white-key" id="2a" onclick="a4()"><i>A4</i></span>
+                  <span class="black-key"><i></i></span>
+                </li>
+                <li class="key">
+                  <span class="white-key" id="2b" onclick="b4()"><i>B4</i></span>
+                </li>
+              </ul>
+            </div>
+
+            <audio controls src="studio-pop01.wav"></audio>
+            <audio controls id="c3audio" preload src="music/grand-piano/one-shot/c3.mp3"></audio>
+            <audio controls id="d3audio" preload src="music/grand-piano/one-shot/d3.mp3"></audio>
+            <audio controls id="e3audio" preload src="music/grand-piano/one-shot/e3.mp3"></audio>
+            <audio controls id="f3audio" preload src="music/grand-piano/one-shot/f3.mp3"></audio>
+            <audio controls id="g3audio" preload src="music/grand-piano/one-shot/g3.mp3"></audio>
+            <audio controls id="a3audio" preload src="music/grand-piano/one-shot/a3.mp3"></audio>
+            <audio controls id="b3audio" preload src="music/grand-piano/one-shot/b3.mp3"></audio>
+            <audio controls id="c4audio" preload src="music/grand-piano/one-shot/c4.mp3"></audio>
+            <audio controls id="d4audio" preload src="music/grand-piano/one-shot/d4.mp3"></audio>
+            <audio controls id="e4audio" preload src="music/grand-piano/one-shot/e4.mp3"></audio>
+            <audio controls id="f4audio" preload src="music/grand-piano/one-shot/f4.mp3"></audio>
+            <audio controls id="g4audio" preload src="music/grand-piano/one-shot/g4.mp3"></audio>
+            <audio controls id="a4audio" preload src="music/grand-piano/one-shot/a4.mp3"></audio>
+            <audio controls id="b4audio" preload src="music/grand-piano/one-shot/b4.mp3"></audio>
+          </section>
+        </article>
+      </main>
+  </div>
+
+  <footer>
+    <p class="copy">&copy; 2021 DEMO Site</p>
+  </footer>
+</body>
+</html>

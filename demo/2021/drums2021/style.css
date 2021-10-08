@@ -1,0 +1,158 @@
+.drums{
+  width: 60%;
+  height: auto;
+}
+.drums{
+  stroke: #333;
+  stroke-miterlimit:10;
+}
+.st1{
+  fill: #eee;
+}
+.st3{
+  fill: #ff3d3d;
+}
+.st4{
+  fill: #ccc;
+}
+.st5{
+  fill: #222;
+}
+.bass-type01{
+  stroke: none;
+  fill: #eee;
+}
+.drums-back{
+  stroke: #333;
+  fill: #eee;
+}
+.drums-back .st1{
+  fill: #333;
+}
+
+.hat .st3, .clash .st3, .ride{
+  fill: #ffff33;
+}
+
+#clash01-l{
+  animation: clash01-l .5s forwards;
+}
+@keyframes clash01-l {
+  0%{
+    transform: scaleY(1.3);
+  }
+  100%{
+    transform: scaleY(1);
+  }
+}
+
+#clash01-r{
+  animation: clash01-r .5s forwards;
+}
+@keyframes clash01-r {
+  0%{
+    transform: scaleY(1.3);
+  }
+  100%{
+    transform: scaleY(1);
+  }
+}
+
+#bass01{
+  animation: bass01 .5s forwards;
+}
+@keyframes bass01 {
+  0%{
+    transform: scale(1.1) translate(-5%, -5%);
+  }
+  100%{
+    transform: scale(1) translate(0);
+  }
+}
+
+#snare01{
+  animation: snare01 .5s forwards;
+}
+@keyframes snare01 {
+  0%{
+    transform: scaleY(.9) translateY(10%);
+  }
+  100%{
+    transform: scaleY(1) translateY(0);
+  }
+}
+
+#hi01-tam{
+  animation: hi01-tam .5s forwards;
+}
+@keyframes hi01-tam {
+  0%{
+    transform: scaleY(.9) translateY(5%);
+  }
+  100%{
+    transform: scaleY(1) translateY(0);
+  }
+}
+
+#mid01-tam{
+  animation: mid01-tam .5s forwards;
+}
+@keyframes mid01-tam {
+  0%{
+    transform: scaleY(.9) translateY(5%);
+  }
+  100%{
+    transform: scaleY(1) translateY(0);
+  }
+}
+
+#low01-tam{
+  animation: low01-tam .5s forwards;
+}
+@keyframes low01-tam {
+  0%{
+    transform: scaleY(.9) translateY(10%);
+  }
+  100%{
+    transform: scaleY(1) translateY(0);
+  }
+}
+
+#ride01{
+  animation: ride01 .5s forwards;
+}
+@keyframes ride01 {
+  0%{
+    transform: scaleY(1.05) translateX(-.5%);
+  }
+  100%{
+    transform: scaleY(1) translateX(0);
+  }
+}
+
+#hat01-top{
+  animation: hat01-top .5s forwards;
+}
+@keyframes hat01-top {
+  0%{
+    transform: scaleY(1.05) translateX(1%) translateY(0);
+  }
+  5%{
+    transform: translateX(-.5%) translateY(0);
+  }
+  100%{
+    transform: scaleY(1) translateY(0);
+  }
+}
+
+#snare01.pop01{
+  animation: audio01-snare 20s;
+}
+@keyframes audio01-snare {
+  0%{
+    transform: scaleY(2);
+  }
+  100%{
+    transform: scaleY(1);
+  }
+}
