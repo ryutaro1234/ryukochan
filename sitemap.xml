@@ -8,78 +8,98 @@
 
 
 <url>
-  <loc>https://ryukochan.com/</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://ryukochan.com/search</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/portfolio/</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://ryukochan.com/portfolio/</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/zotan2021/</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://ryukochan.com/zotan2021/</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/demo/</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://ryukochan.com/zotan2021/index.html</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/zotan2021/index.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://ryukochan.com/zotan2021/2021-05.html</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/zotan2021/2021-05.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://ryukochan.com/zotan2021/2021-06.html</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/zotan2021/2021-06.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://ryukochan.com/zotan2021/2021-07.html</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/zotan2021/2021-07.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://ryukochan.com/zotan2021/2021-08.html</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/zotan2021/2021-08.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://ryukochan.com/zotan2021/2021-09.html</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/zotan2021/2021-09.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://ryukochan.com/zotan2021/2021-10.html</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/zotan2021/2021-10.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://ryukochan.com/zotan2021/2021-11.html</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/zotan2021/2021-11.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://ryukochan.com/zotan2021/2021-12.html</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/zotan2021/2021-12.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://ryukochan.com/zotan2021/2022-01.html</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/zotan2021/2022-01.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://ryukochan.com/zotan2021/2022-02.html</loc>
-  <lastmod>2021-10-05T02:23:22+00:00</lastmod>
+  <loc>http://ryukochan.com/zotan2021/2022-02.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ryukochan.com/demo/2021/site2021/index.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ryukochan.com/demo/2021/rainbow-curtain2021/index.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ryukochan.com/demo/2021/drums2021/index.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://ryukochan.com/demo/2021/piano/index.html</loc>
+  <lastmod>2021-10-08T05:54:32+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
