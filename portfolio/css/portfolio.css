@@ -592,10 +592,11 @@ footer p{
 }
 
 .arrow-next{
-  position: relative;
+  display: inline-block;
   display: block;
   padding-right: 10px;
   color: #333;
+  text-decoration: none;
 }
 .arrow-next:before {
   content: '';
