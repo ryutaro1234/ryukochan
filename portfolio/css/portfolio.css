@@ -597,6 +597,7 @@ footer p{
   padding-right: 10px;
   color: #333;
   text-decoration: none;
+  list-style-type: disc
 }
 .arrow-next:before {
   content: '';
