@@ -21,9 +21,6 @@ $(function(){
   });
 });
 
-
-$("#lesson02 ol").click(function () {
-  $('#lesson02 span').toggleClass("click");
+$("li").click(function () {
+  $(this).next("span").toggleClass("click");
 });
-
-
