@@ -1,0 +1,30 @@
+#table-of-contents{
+  margin: 0 auto;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  padding: .5rem 1rem;
+}
+
+article{
+  margin: 50px auto;
+}
+
+.btn{
+  background: none;
+  margin: 0 5px;
+  width: 4rem;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  padding: .5rem 0;
+  float: right;
+  color: #aaa;
+}
+.btn.click{
+  border: 1px solid #333;
+  background: #aaa;
+  color: #fff;
+}
+
+footer{
+  margin-top: 50px;
+}
