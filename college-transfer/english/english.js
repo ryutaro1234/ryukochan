@@ -20,3 +20,9 @@ $(function(){
     return false;
   });
 });
+
+
+$("#lesson02").click(function () {
+  $(this).toggleClass("click");
+});
+
