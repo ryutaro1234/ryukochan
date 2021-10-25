@@ -9,8 +9,23 @@ article{
   margin: 50px auto;
 }
 
-tr, td, th{
+table{
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table tr:nth-child(odd) td,table tr:nth-child(odd) th {
+	background: #eee;
+}
+td, th{
   border: 1px solid #555;
+}
+tr{
+  width: 100%;
+}
+th,td{
+  width: 50%;
+  margin: 0;
 }
 
 .btn{
