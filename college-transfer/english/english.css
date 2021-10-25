@@ -9,6 +9,10 @@ article{
   margin: 50px auto;
 }
 
+tr, td, th{
+  border: 1px solid #555;
+}
+
 .btn{
   background: none;
   margin: 0 5px;
