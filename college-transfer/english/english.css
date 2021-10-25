@@ -9,6 +9,10 @@ article{
   margin: 50px auto;
 }
 
+span.click{
+  color:  tranceparent;
+}
+
 .btn{
   background: none;
   margin: 0 5px;
