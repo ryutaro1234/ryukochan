@@ -6,10 +6,11 @@
 }
 
 article{
-  margin: 50px auto;
+  margin: 70px auto;
 }
 
 table{
+  margin: 1rem auto;
   border: none;
   border-collapse: collapse;
   border-spacing: 0;
@@ -28,6 +29,10 @@ th,td{
   margin: 0;
 }
 
+.click{
+  color: transparent;
+}
+
 .btn{
   background: none;
   margin: 0 5px;
@@ -37,11 +42,6 @@ th,td{
   padding: .5rem 0;
   float: right;
   color: #aaa;
-}
-.btn.click{
-  border: 1px solid #333;
-  background: #aaa;
-  color: #fff;
 }
 
 footer{

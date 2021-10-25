@@ -1,14 +1,3 @@
-$(function () {
-    $('.btn-hide').on('click', () => {
-        $('span').hide();
-    });
-});
-
-$(function () {
-    $('.btn-show').on('click', () => {
-        $('span').show();
-    });
-});
 
 $(function(){
   $('a[href^="#"]').click(function(){
@@ -21,6 +10,25 @@ $(function(){
   });
 });
 
-$("li").click(function () {
-  $(this).next().toggleClass("click");
+$(function () {
+    $('.btn-hide01').on('click', () => {
+        $('#lesson01 section table td').css("color","transparent");
+    });
+});
+$(function () {
+    $('.btn-show01').on('click', () => {
+        $('#lesson01 section table td').css("color","#333");
+    });
+});
+
+
+$(function () {
+    $('.btn-hide02').on('click', () => {
+        $('#lesson02 section table td').css("color","transparent");
+    });
+});
+$(function () {
+    $('.btn-show02').on('click', () => {
+        $('#lesson02 section table td').css("color","#333");
+    });
 });
