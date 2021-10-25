@@ -9,8 +9,8 @@ article{
   margin: 50px auto;
 }
 
-span.click{
-  color:  tranceparent;
+.click{
+  color:  transparent;
 }
 
 .btn{
@@ -22,11 +22,6 @@ span.click{
   padding: .5rem 0;
   float: right;
   color: #aaa;
-}
-.btn.click{
-  border: 1px solid #333;
-  background: #aaa;
-  color: #fff;
 }
 
 footer{
