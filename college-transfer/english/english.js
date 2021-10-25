@@ -22,5 +22,5 @@ $(function(){
 });
 
 $("li").click(function () {
-  $(this).next("span").toggleClass("click");
+  $(this).next().toggleClass("click");
 });
