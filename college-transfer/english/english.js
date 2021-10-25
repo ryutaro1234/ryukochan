@@ -21,3 +21,9 @@ $(function(){
   });
 });
 
+
+$("#lesson02").click(function () {
+  $('#lesson02 span').toggleClass("click");
+});
+
+
