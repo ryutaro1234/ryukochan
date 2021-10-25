@@ -21,8 +21,3 @@ $(function(){
   });
 });
 
-
-$("#lesson02").click(function () {
-  $(this 'span').toggleClass("click");
-});
-
