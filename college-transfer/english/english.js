@@ -23,6 +23,6 @@ $(function(){
 
 
 $("#lesson02").click(function () {
-  $(this).toggleClass("click");
+  $(this 'span').toggleClass("click");
 });
 
