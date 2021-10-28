@@ -5,6 +5,8 @@ $(function() {
     }
     else if (!$(this).hasClass("active")) {
       $(this).addClass("active");
+      $("#box1_2").removeClass("active");
+      $("#box1_3").removeClass("active");
     }
   });
 });
@@ -16,6 +18,8 @@ $(function() {
     }
     else if (!$(this).hasClass("active")) {
       $(this).addClass("active");
+      $("#box1_1").removeClass("active");
+      $("#box1_3").removeClass("active");
     }
   });
 });
@@ -27,6 +31,8 @@ $(function() {
     }
     else if (!$(this).hasClass("active")) {
       $(this).addClass("active");
+      $("#box1_1").removeClass("active");
+      $("#box1_2").removeClass("active");
     }
   });
 });
