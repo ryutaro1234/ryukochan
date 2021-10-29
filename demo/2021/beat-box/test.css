@@ -21,13 +21,13 @@
   background-color: #ff8cce;
 }
 
-#beat_box02 a.active{
+#box2_1.active, #box2_2.active, #box2_3.active{
   font-weight: bold;
   color: #fff;
   background-color: #7ad599;
 }
 
-#beat_box03 a.active{
+#box3_1.active, #box3_2.active, #box3_3.active{
   font-weight: bold;
   color: #fff;
   background-color: #ff8787;
