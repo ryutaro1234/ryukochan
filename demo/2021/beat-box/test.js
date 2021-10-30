@@ -134,7 +134,6 @@ $(function() {
       $('#audio3_1')[0].pause();
       $('#audio3_2')[0].pause();
       $('#audio3_3')[0].pause();
-
     }//if
 
     else if (!$(this).hasClass("active")) {
@@ -219,7 +218,7 @@ $(function() {
   });
 });
 
-document.querySelector("#audio1_1").onpause = function(){
-  document.querySelector("#play01").classList.remove("active");
-  document.querySelector("#play01").text("▶︎再生");
-};
+$("#audio1_1")[0].pause(function(){
+  $("#play01").removeClass("active");
+  $("#play01").text("▶︎再生");
+});
