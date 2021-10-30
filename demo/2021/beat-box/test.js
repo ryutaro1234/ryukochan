@@ -218,7 +218,10 @@ $(function() {
   });
 });
 
-$("#audio1_1")[0].pause(function(){
-  $("#play01").removeClass("active");
-  $("#play01").text("▶︎再生");
+
+$(function() {
+  $("#audio1_1")[0].pause(function(){
+    $("#play01").removeClass("active");
+    $("#play01").text("▶︎再生");
+  });
 });
