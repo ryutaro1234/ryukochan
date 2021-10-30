@@ -107,25 +107,82 @@ $(function() {
       $(this).removeClass("active");
       $(this).text("▶︎再生");
 
-      $('#audio1_1')[0].pause();
-      $('#audio1_2')[0].pause();
-      $('#audio1_3')[0].pause();
-      $('#audio2_1')[0].pause();
-      $('#audio2_2')[0].pause();
-      $('#audio2_3')[0].pause();
-      $('#audio3_1')[0].pause();
-      $('#audio3_2')[0].pause();
-      $('#audio3_3')[0].pause();
+      $('#audio1_1_1')[0].pause();
+      $('#audio1_2_1')[0].pause();
+      $('#audio1_3_1')[0].pause();
 
-      $('#audio1_1')[0].currentTime = 0;
-      $('#audio1_2')[0].currentTime = 0;
-      $('#audio1_3')[0].currentTime = 0;
-      $('#audio2_1')[0].currentTime = 0;
-      $('#audio2_2')[0].currentTime = 0;
-      $('#audio2_3')[0].currentTime = 0;
-      $('#audio3_1')[0].currentTime = 0;
-      $('#audio3_2')[0].currentTime = 0;
-      $('#audio3_3')[0].currentTime = 0;
+      $('#audio1_1_2')[0].pause();
+      $('#audio1_2_2')[0].pause();
+      $('#audio1_3_2')[0].pause();
+
+      $('#audio1_1_3')[0].pause();
+      $('#audio1_2_3')[0].pause();
+      $('#audio1_3_3')[0].pause();
+
+
+      $('#audio2_1_1')[0].pause();
+      $('#audio2_2_1')[0].pause();
+      $('#audio2_3_1')[0].pause();
+
+      $('#audio2_1_2')[0].pause();
+      $('#audio2_2_2')[0].pause();
+      $('#audio2_3_2')[0].pause();
+
+      $('#audio2_1_3')[0].pause();
+      $('#audio2_2_3')[0].pause();
+      $('#audio2_3_3')[0].pause();
+
+
+      $('#audio3_1_1')[0].pause();
+      $('#audio3_2_1')[0].pause();
+      $('#audio3_3_1')[0].pause();
+
+      $('#audio3_1_2')[0].pause();
+      $('#audio3_2_2')[0].pause();
+      $('#audio3_3_2')[0].pause();
+
+      $('#audio3_1_3')[0].pause();
+      $('#audio3_2_3')[0].pause();
+      $('#audio3_3_3')[0].pause();
+
+
+      $('#audio1_1_1')[0].currentTime = 0;
+      $('#audio1_2_1')[0].currentTime = 0;
+      $('#audio1_3_1')[0].currentTime = 0;
+
+      $('#audio1_1_2')[0].currentTime = 0;
+      $('#audio1_2_2')[0].currentTime = 0;
+      $('#audio1_3_2')[0].currentTime = 0;
+
+      $('#audio1_1_3')[0].currentTime = 0;
+      $('#audio1_2_3')[0].currentTime = 0;
+      $('#audio1_3_3')[0].currentTime = 0;
+
+
+      $('#audio2_1_1')[0].currentTime = 0;
+      $('#audio2_2_1')[0].currentTime = 0;
+      $('#audio2_3_1')[0].currentTime = 0;
+
+      $('#audio2_1_2')[0].currentTime = 0;
+      $('#audio2_2_2')[0].currentTime = 0;
+      $('#audio2_3_2')[0].currentTime = 0;
+
+      $('#audio2_1_3')[0].currentTime = 0;
+      $('#audio2_2_3')[0].currentTime = 0;
+      $('#audio2_3_3')[0].currentTime = 0;
+
+
+      $('#audio3_1_1')[0].currentTime = 0;
+      $('#audio3_2_1')[0].currentTime = 0;
+      $('#audio3_3_1')[0].currentTime = 0;
+
+      $('#audio3_1_2')[0].currentTime = 0;
+      $('#audio3_2_2')[0].currentTime = 0;
+      $('#audio3_3_2')[0].currentTime = 0;
+
+      $('#audio3_1_3')[0].currentTime = 0;
+      $('#audio3_2_3')[0].currentTime = 0;
+      $('#audio3_3_3')[0].currentTime = 0;
     }//if
 
     else if (!$(this).hasClass("active")) {
@@ -365,7 +422,7 @@ $(function() {
 
 
 $(function() {
-  $("#audio1_1")[0].pause(function(){
+  $("#audio1_1_1").pause(function(){
     $("#play01").removeClass("active");
     $("#play01").text("▶︎再生");
   });
