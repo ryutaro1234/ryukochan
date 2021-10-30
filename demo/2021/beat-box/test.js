@@ -134,6 +134,16 @@ $(function() {
       $('#audio3_1')[0].pause();
       $('#audio3_2')[0].pause();
       $('#audio3_3')[0].pause();
+
+      $('#audio1_1')[0].currentTime = 0;
+      $('#audio1_2')[0].currentTime = 0;
+      $('#audio1_3')[0].currentTime = 0;
+      $('#audio2_1')[0].currentTime = 0;
+      $('#audio2_2')[0].currentTime = 0;
+      $('#audio2_3')[0].currentTime = 0;
+      $('#audio3_1')[0].currentTime = 0;
+      $('#audio3_2')[0].currentTime = 0;
+      $('#audio3_3')[0].currentTime = 0;
     }//if
 
     else if (!$(this).hasClass("active")) {
