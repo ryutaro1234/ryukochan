@@ -1,4 +1,16 @@
 $(function() {
+  $('#audio1_1').load();
+  $('#audio1_2').load();
+  $('#audio1_3').load();
+  $('#audio2_1').load();
+  $('#audio2_2').load();
+  $('#audio2_3').load();
+  $('#audio3_1').load();
+  $('#audio3_2').load();
+  $('#audio3_3').load();
+});
+
+$(function() {
   $("#box1_1").click(function(){
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
