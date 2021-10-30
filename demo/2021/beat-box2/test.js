@@ -421,9 +421,7 @@ $(function() {
 });
 
 
-$(function() {
-  $("#audio1_1_1").pause(function(){
-    $("#play01").removeClass("active");
-    $("#play01").text("▶︎再生");
-  });
-});
+// document.querySelector("#audio1_1_1").onpause = function(){
+//   document.querySelector("#play01").classList.remove("active");
+//   document.querySelector("#play01").innerHTML = "▶︎再生";
+// };
