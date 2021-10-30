@@ -1,0 +1,49 @@
+.box_btn{
+  width: 312px;
+  margin: 0 auto;
+  display: flex;
+}
+.box_btn a{
+  margin: 2px;
+  width: 100px;
+  height: 100px;
+  color: #999;
+  line-height: 36px;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#box1_1.active, #box1_2.active, #box1_3.active{
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff8cce;
+}
+
+#box2_1.active, #box2_2.active, #box2_3.active{
+  font-weight: bold;
+  color: #fff;
+  background-color: #7ad599;
+}
+
+#box3_1.active, #box3_2.active, #box3_3.active{
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff8787;
+}
+
+#play01{
+  width: 4rem;
+  margin: 1rem auto;
+  padding: .2rem 0;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+#play01.active{
+  background: #333;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+}
