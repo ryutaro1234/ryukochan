@@ -47,3 +47,8 @@
   font-weight: bold;
   color: #fff;
 }
+
+img{
+  display: block;
+  margin: 0 auto;
+}
