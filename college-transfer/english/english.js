@@ -32,3 +32,27 @@ $(function () {
         $('#lesson02 section table td').css("color","#333");
     });
 });
+
+
+$(function () {
+    $('.btn-hide03').on('click', () => {
+        $('#lesson02 section table td').css("color","transparent");
+    });
+});
+$(function () {
+    $('.btn-show03').on('click', () => {
+        $('#lesson02 section table td').css("color","#333");
+    });
+});
+
+
+$(function () {
+    $('.btn-hide04').on('click', () => {
+        $('#lesson02 section table td').css("color","transparent");
+    });
+});
+$(function () {
+    $('.btn-show04').on('click', () => {
+        $('#lesson02 section table td').css("color","#333");
+    });
+});
