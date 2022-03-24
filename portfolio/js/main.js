@@ -129,41 +129,33 @@ $(function(){
     });
   });
 });
-let bg01 = document.getElementsByClassName('bg01');
-window.addEventListener("load", () => {
-  for (let i = 0; i < bg01.length; i++){
-    const rect = bg01[i].getBoundingClientRect().top;
-    const scroll = window.pageYOffset || document.documentElement.scrollTop;
-    const offset = rect + scroll;
-    const windowHeight = window.innerHeight;
-    if (scroll > offset - windowHeight + 150) {
-      bg01[i].classList.add('-visible');
-    }
-  }
+
+$(function(){
+  $('#musicBtn').click(function() {
+    $(this).toggleClass('active');
+
+    if ($(this).hasClass("active")) {
+      $('.music').addClass("none");
+    };
+
+    if (!$(this).hasClass("active")) {
+      $('.music').removeClass("none");
+    };
+
+  });
 });
 
-let bg02 = document.getElementsByClassName('bg02');
-window.addEventListener("load", () => {
-  for (let i = 0; i < bg02.length; i++){
-    const rect = bg02[i].getBoundingClientRect().top;
-    const scroll = window.pageYOffset || document.documentElement.scrollTop;
-    const offset = rect + scroll;
-    const windowHeight = window.innerHeight;
-    if (scroll > offset - windowHeight + 150) {
-      bg02[i].classList.add('-visible');
-    }
-  }
-});
+$(function(){
+  $('#graphicBtn').click(function() {
+    $(this).toggleClass('active');
 
-let bg03 = document.getElementsByClassName('bg03');
-window.addEventListener("load", () => {
-  for (let i = 0; i < bg03.length; i++){
-    const rect = bg03[i].getBoundingClientRect().top;
-    const scroll = window.pageYOffset || document.documentElement.scrollTop;
-    const offset = rect + scroll;
-    const windowHeight = window.innerHeight;
-    if (scroll > offset - windowHeight + 150) {
-      bg03[i].classList.add('-visible');
-    }
-  }
+    if ($(this).hasClass("active")) {
+      $('.graphic').addClass("none");
+    };
+
+    if (!$(this).hasClass("active")) {
+      $('.graphic').removeClass("none");
+    };
+
+  });
 });
