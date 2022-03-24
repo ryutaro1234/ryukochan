@@ -25,6 +25,9 @@ $(function(){
       if (scroll > target - height){
         $(this).addClass('active');
       }
+      else {
+        $(this).removeClass('active');
+      }
     });
   });
 });
@@ -37,6 +40,9 @@ $(function(){
       if (scroll > target - height){
         $(this).addClass('active');
       }
+      else {
+        $(this).removeClass('active');
+      }
     });
   });
 });
@@ -48,6 +54,9 @@ $(function(){
       var height = $(window).height();
       if (scroll > target - height){
         $(this).addClass('active');
+      }
+      else {
+        $(this).removeClass('active');
       }
     });
   });
@@ -62,6 +71,9 @@ $(function(){
       if (scroll > target - height){
         $(this).addClass('active');
       }
+      else {
+        $(this).removeClass('active');
+      }
     });
   });
 });
@@ -74,6 +86,9 @@ $(function(){
       if (scroll > target - height){
         $(this).addClass('active');
       }
+      else {
+        $(this).removeClass('active');
+      }
     });
   });
 });
@@ -85,6 +100,9 @@ $(function(){
       var height = $(window).height();
       if (scroll > target - height){
         $(this).addClass('active');
+      }
+      else {
+        $(this).removeClass('active');
       }
     });
   });
@@ -99,6 +117,9 @@ $(function(){
       if (scroll > target - height){
         $(this).addClass('active');
       }
+      else {
+        $(this).removeClass('active');
+      }
     });
   });
 });
@@ -110,6 +131,9 @@ $(function(){
       var height = $(window).height();
       if (scroll > target - height){
         $(this).addClass('active');
+      }
+      else {
+        $(this).removeClass('active');
       }
     });
   });
@@ -126,6 +150,9 @@ $(function(){
       if (scroll > target - height){
         $(this).addClass('-visible');
       }
+      else {
+        $(this).removeClass('active');
+      }
     });
   });
 });
@@ -135,11 +162,13 @@ $(function(){
     $(this).toggleClass('active');
 
     if ($(this).hasClass("active")) {
-      $('.music').addClass("none");
+      $('.graphic').addClass("none");
+      $('#graphicBtn').removeClass("active");
+      $('.music').removeClass("none");
     };
 
     if (!$(this).hasClass("active")) {
-      $('.music').removeClass("none");
+      $('.graphic').removeClass("none");
     };
 
   });
@@ -150,11 +179,13 @@ $(function(){
     $(this).toggleClass('active');
 
     if ($(this).hasClass("active")) {
-      $('.graphic').addClass("none");
+      $('.music').addClass("none");
+      $('#musicBtn').removeClass("active");
+      $('.graphic').removeClass("none");
     };
 
     if (!$(this).hasClass("active")) {
-      $('.graphic').removeClass("none");
+      $('.music').removeClass("none");
     };
 
   });
