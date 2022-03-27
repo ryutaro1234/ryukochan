@@ -2,16 +2,6 @@
 <html lang="ja">
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-201423518-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-201423518-2');
-  </script>
-
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -20,9 +10,6 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-P9QNJWH');</script>
   <!-- End Google Tag Manager -->
-
-<!-- Google Adsence -->
-  <script data-ad-client="ca-pub-2784801065206915" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <!-- basic information -->
   <meta charset="UTF-8" />
@@ -76,10 +63,10 @@
 
     <nav id="navigation">
       <ul class="nav_menu_ul">
-        <li class="nav_menu_li"><a class="links" href="#home">Top</a></li>
-        <li class="nav_menu_li"><a class="links" href="#profile">Profile</a></li>
-        <li class="nav_menu_li"><a class="links" href="#contact">Contact</a></li>
-        <li class="nav_menu_li"><a class="links" href="#works">Works</a></li>
+        <li class="nav_menu_li"><a class="links" onclick="nav_toggle()" href="#home">Top</a></li>
+        <li class="nav_menu_li"><a class="links" onclick="nav_toggle()" href="#profile">Profile</a></li>
+        <li class="nav_menu_li"><a class="links" onclick="nav_toggle()" href="#contact">Contact</a></li>
+        <li class="nav_menu_li"><a class="links" onclick="nav_toggle()" href="#works">Works</a></li>
       </ul>
     </nav>
 
@@ -276,12 +263,9 @@
 
       <section class="music">
         <h3 class="scroll-slide-r">5AM bgm</h3>
-        <img class="scroll-up" src="images/works/2021/5am-bgm.jpg" alt="5am キービジュアル" />
-
-        <ul>
-          <li class="scroll-up">Demo</li>
-        </ul>
-        <iframe class="scroll-up" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1120014415&color=%23cac7c2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ryutarodayo1234" title="Ryutarodayo1234" target="_blank" style="color: #cccccc; text-decoration: none;">Ryutarodayo1234</a> · <a href="https://soundcloud.com/ryutarodayo1234/5am-bgm" title="5am - Bgm" target="_blank" style="color: #cccccc; text-decoration: none;">5am - Bgm</a></div>
+        <div class="youtube">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VfAum4CUI9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
         <ul>
           <li class="scroll-slide-l">販売サイト</li>
@@ -303,8 +287,8 @@
 
       <section class="music">
         <h3 class="scroll-slide-r">エール！feat.初音ミク</h3>
-        <div class="youtube scroll-up">
-          <iframe src="https://www.youtube.com/embed/iEuMSMyA2lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="youtube">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/iEuMSMyA2lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <ul>
