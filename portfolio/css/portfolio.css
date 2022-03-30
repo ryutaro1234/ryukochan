@@ -254,7 +254,7 @@ h3{
   -webkit-text-fill-color: transparent;
 }
 
-p, blockquote, ul, ol, dl, li, table, pre {
+blockquote, ul, ol, dl, li, table, pre {
   margin: 5px 0;
   font-size: 85%;
   letter-spacing: 2px;
@@ -266,6 +266,9 @@ p, blockquote, ul, ol, dl, li, table, pre {
 }
 p{
   text-align: left;
+  margin: 0 0 0 1rem;
+  font-size: 85%;
+  letter-spacing: 0;
 }
 
 span{
