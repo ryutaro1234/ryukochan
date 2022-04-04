@@ -500,6 +500,17 @@ img{
   height: auto;
 }
 
+.flexMobile{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flexMobile img{
+  width: 50%;
+  height: auto;
+}
+
 .youtube {
   position: relative;
   padding-bottom: 56.25%; /* 16:9の場合*/
