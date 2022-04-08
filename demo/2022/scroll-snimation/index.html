@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="demo" />
+  <title>scrollAnime</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <html>
+    <!-- ソースコードはフリーですが画像は変えてね^^ -->
+
+<div class="content">
+    <div class="padding">
+        <p style="color:white;">HELLO</p>
+    </div>
+
+    <div id="anim_img_box">
+        <img id="anim_img" src="images/anime1.png" style="width: 100%;"/> <!--初期画像を入れておくよ。置き換わる部分だよ-->
+    </div>
+
+    <div id="anim_img_padding" class="padding">
+        このエリアは画像を動かすためにスクロールされますが、重なっているので見えません。<br>
+        このサイズはJavaScriptで変わります。
+    </div>
+    <div class="padding">
+        <p style="color:white">Let's start.</p>
+    </div>
+</div>
+
+  <footer>
+    <p class="copy">&copy; 2021 Ryutaro Matsumoto</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
