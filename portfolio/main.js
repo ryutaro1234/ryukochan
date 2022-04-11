@@ -173,17 +173,17 @@ window.addEventListener("scroll", () => {
 
     const h1 = document.getElementsByTagName('h1');
     for (i = 0; i < h1.length; i++) {
-      h1[i].style.background = "linear-gradient(25deg, #fff, #add6ff)";
+      h1[i].style.background = "linear-gradient(25deg, #333, #add6ff)";
       h1[i].style.webkitBackgroundClip = "text";
     }
     const h2 = document.getElementsByTagName('h2');
     for (i = 0; i < h2.length; i++) {
-      h2[i].style.background = "linear-gradient(25deg, #fff, #add6ff)";
+      h2[i].style.background = "linear-gradient(25deg, #333, #add6ff)";
       h2[i].style.webkitBackgroundClip = "text";
     }
     const h3 = document.getElementsByTagName('h3');
     for (i = 0; i < h3.length; i++) {
-      h3[i].style.background = "linear-gradient(25deg, #fff, #add6ff)";
+      h3[i].style.background = "linear-gradient(25deg, #333, #add6ff)";
       h3[i].style.webkitBackgroundClip = "text";
     }
 
