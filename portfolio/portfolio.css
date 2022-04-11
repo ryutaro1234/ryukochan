@@ -22,7 +22,7 @@ body {
   font-family: sans-serif;
   line-height: 1.6rem;
   margin: 0 .5rem;
-  background-color: #ffb457;
+  background: linear-gradient(90deg, #ffb457, #ffbf7f);
   -webkit-tap-highlight-color: transparent;
   transition: background-color var(--duration);
 }
@@ -214,14 +214,14 @@ h1{
   letter-spacing: 10px;
   text-align: center;
   color: #fff;
-  background: linear-gradient(25deg, #fff, #ffff33);
+  background: linear-gradient(25deg, #333, #ff7f00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 h2{
   color: #fff;
-  background: linear-gradient(25deg, #fff, #ffff33);
+  background: linear-gradient(25deg, #333, #ff7f00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -231,7 +231,7 @@ h3{
   letter-spacing: 2px;
   text-align: left;
   color: #fff;
-  background: linear-gradient(25deg, #fff, #ffff33);
+  background: linear-gradient(25deg, #333, #ff7f00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
