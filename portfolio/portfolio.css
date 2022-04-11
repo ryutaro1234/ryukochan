@@ -27,6 +27,11 @@ body {
   transition: background-color var(--duration);
 }
 
+#container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .search-style{
   display: none;
 }
@@ -543,7 +548,7 @@ footer p{
     left: 2%
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 960px) {
 
   .menu__border {
     left: 3%
