@@ -1,17 +1,13 @@
-function nav_toggle(){
-  document.getElementById("nav_toggle").classList.toggle("nav_toggle");
-  document.getElementById("navigation").classList.toggle("navigation");
-  document.getElementById("nav").classList.toggle("nav");
-};
-
 var Ease = {
-  easeInOut: function (t) { return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1; }
+  easeInOut: function(t) {
+    return t < .5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+  }
 }
 var duration = 500;
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', function() {
   var smoothScrollTriggers = [].slice.call(document.querySelectorAll('a[href^="#"]'));
-  smoothScrollTriggers.forEach(function (smoothScrollTrigger) {
-    smoothScrollTrigger.addEventListener('click', function (e) {
+  smoothScrollTriggers.forEach(function(smoothScrollTrigger) {
+    smoothScrollTrigger.addEventListener('click', function(e) {
       var href = smoothScrollTrigger.getAttribute('href');
       var currentPostion = document.documentElement.scrollTop || document.body.scrollTop;
       var targetElement = document.getElementById(href.replace('#', ''));
@@ -20,7 +16,7 @@ window.addEventListener('DOMContentLoaded', function () {
         e.stopPropagation();
         var targetPosition = window.pageYOffset + targetElement.getBoundingClientRect().top - 115;
         var startTime = performance.now();
-        var loop = function (nowTime) {
+        var loop = function(nowTime) {
           var time = nowTime - startTime;
           var normalizedTime = time / duration;
           if (normalizedTime < 1) {
@@ -36,265 +32,244 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-let fadeIn = document.getElementsByClassName('fade-in');
-window.addEventListener("load", () => {
-  for (let i = 0; i < fadeIn.length; i++){
-    const rect = fadeIn[i].getBoundingClientRect().top;
-    const scroll = window.pageYOffset || document.documentElement.scrollTop;
-    const offset = rect + scroll;
-    const windowHeight = window.innerHeight;
-    if (scroll > offset - windowHeight + 150) {
-      fadeIn[i].classList.add('active');
+window.addEventListener("scroll", () => {
+  const rect = document.getElementById('home').getBoundingClientRect().top;
+  const scroll = window.pageYOffset || document.documentElement.scrollTop;
+  const offset = rect + scroll;
+  const windowHeight = window.innerHeight;
+  if (scroll > offset - windowHeight) {
+    document.body.style.backgroundColor = "#ffb457";
+
+    const h1 = document.getElementsByTagName('h1');
+    for (i = 0; i < h1.length; i++) {
+      h1[i].style.background = "linear-gradient(25deg, #fff, #ffff33)";
+      h1[i].style.webkitBackgroundClip = "text";
     }
+    const h2 = document.getElementsByTagName('h2');
+    for (i = 0; i < h2.length; i++) {
+      h2[i].style.background = "linear-gradient(25deg, #fff, #ffff33)";
+      h2[i].style.webkitBackgroundClip = "text";
+    }
+    const h3 = document.getElementsByTagName('h3');
+    for (i = 0; i < h3.length; i++) {
+      h3[i].style.background = "linear-gradient(25deg, #fff, #ffff33)";
+      h3[i].style.webkitBackgroundClip = "text";
+    }
+
+    document.querySelector("#homeBtn .menu__item").classList.add("active");
+
+    document.querySelector(".menu__border").style.marginLeft = "0%";
+  } else {
+    document.querySelector("#homeBtn .menu__item").classList.remove("active");
   }
 });
 
+window.addEventListener("scroll", () => {
+  const rect = document.getElementById('profile').getBoundingClientRect().top;
+  const scroll = window.pageYOffset || document.documentElement.scrollTop;
+  const offset = rect + scroll;
+  const windowHeight = window.innerHeight;
+  if (scroll > offset - windowHeight) {
+    document.body.style.backgroundColor = "#ff96bd";
+
+    const h1 = document.getElementsByTagName('h1');
+    for (i = 0; i < h1.length; i++) {
+      h1[i].style.background = "linear-gradient(25deg, #fff, #ffadff)";
+      h1[i].style.webkitBackgroundClip = "text";
+    }
+    const h2 = document.getElementsByTagName('h2');
+    for (i = 0; i < h2.length; i++) {
+      h2[i].style.background = "linear-gradient(25deg, #fff, #ffadff)";
+      h2[i].style.webkitBackgroundClip = "text";
+    }
+    const h3 = document.getElementsByTagName('h3');
+    for (i = 0; i < h3.length; i++) {
+      h3[i].style.background = "linear-gradient(25deg, #fff, #ffadff)";
+      h3[i].style.webkitBackgroundClip = "text";
+    }
+
+    document.querySelector("#profileBtn .menu__item").classList.add("active");
+    document.querySelector("#homeBtn .menu__item").classList.remove("active");
+
+    document.querySelector(".menu__border").style.marginLeft = "20%";
+  } else {
+    document.querySelector("#profileBtn .menu__item").classList.remove("active");
+  }
+});
+
+window.addEventListener("scroll", () => {
+  const rect = document.getElementById('contact').getBoundingClientRect().top;
+  const scroll = window.pageYOffset || document.documentElement.scrollTop;
+  const offset = rect + scroll;
+  const windowHeight = window.innerHeight;
+  if (scroll > offset - windowHeight) {
+    document.body.style.backgroundColor = "#cffff1";
+
+    const h1 = document.getElementsByTagName('h1');
+    for (i = 0; i < h1.length; i++) {
+      h1[i].style.background = "linear-gradient(25deg, #333, #3cb371)";
+      h1[i].style.webkitBackgroundClip = "text";
+    }
+    const h2 = document.getElementsByTagName('h2');
+    for (i = 0; i < h2.length; i++) {
+      h2[i].style.background = "linear-gradient(25deg, #333, #3cb371)";
+      h2[i].style.webkitBackgroundClip = "text";
+    }
+    const h3 = document.getElementsByTagName('h3');
+    for (i = 0; i < h3.length; i++) {
+      h3[i].style.background = "linear-gradient(25deg, #333, #3cb371)";
+      h3[i].style.webkitBackgroundClip = "text";
+    }
+
+    document.querySelector("#contactBtn .menu__item").classList.add("active");
+    document.querySelector("#profileBtn .menu__item").classList.remove("active");
+
+    document.querySelector(".menu__border").style.marginLeft = "40%";
+  } else {
+    document.querySelector("#contactBtn .menu__item").classList.remove("active");
+  }
+});
+
+window.addEventListener("scroll", () => {
+  const rect = document.getElementById('graphic').getBoundingClientRect().top;
+  const scroll = window.pageYOffset || document.documentElement.scrollTop;
+  const offset = rect + scroll;
+  const windowHeight = window.innerHeight;
+  if (scroll > offset - windowHeight) {
+    document.body.style.backgroundColor = "#fffcf9";
+
+    const h1 = document.getElementsByTagName('h1');
+    for (i = 0; i < h1.length; i++) {
+      h1[i].style.background = "linear-gradient(25deg, #ffa500, #ffff33)";
+      h1[i].style.webkitBackgroundClip = "text";
+    }
+    const h2 = document.getElementsByTagName('h2');
+    for (i = 0; i < h2.length; i++) {
+      h2[i].style.background = "linear-gradient(25deg, #ffa500, #ffff33)";
+      h2[i].style.webkitBackgroundClip = "text";
+    }
+    const h3 = document.getElementsByTagName('h3');
+    for (i = 0; i < h3.length; i++) {
+      h3[i].style.background = "linear-gradient(25deg, #ffa500, #ffff33)";
+      h3[i].style.webkitBackgroundClip = "text";
+    }
+
+    document.querySelector("#graphicBtn .menu__item").classList.add("active");
+    document.querySelector("#contactBtn .menu__item").classList.remove("active");
+
+    document.querySelector(".menu__border").style.marginLeft = "60%";
+  } else {
+    document.querySelector("#graphicBtn .menu__item").classList.remove("active");
+  }
+});
+
+window.addEventListener("scroll", () => {
+  const rect = document.getElementById('music').getBoundingClientRect().top;
+  const scroll = window.pageYOffset || document.documentElement.scrollTop;
+  const offset = rect + scroll;
+  const windowHeight = window.innerHeight;
+  if (scroll > offset - windowHeight) {
+    document.body.style.backgroundColor = "#f9fcff";
+
+    const h1 = document.getElementsByTagName('h1');
+    for (i = 0; i < h1.length; i++) {
+      h1[i].style.background = "linear-gradient(25deg, #fff, #add6ff)";
+      h1[i].style.webkitBackgroundClip = "text";
+    }
+    const h2 = document.getElementsByTagName('h2');
+    for (i = 0; i < h2.length; i++) {
+      h2[i].style.background = "linear-gradient(25deg, #fff, #add6ff)";
+      h2[i].style.webkitBackgroundClip = "text";
+    }
+    const h3 = document.getElementsByTagName('h3');
+    for (i = 0; i < h3.length; i++) {
+      h3[i].style.background = "linear-gradient(25deg, #fff, #add6ff)";
+      h3[i].style.webkitBackgroundClip = "text";
+    }
+
+    document.querySelector("#graphicBtn .menu__item").classList.remove("active");
+    document.querySelector("#musicBtn .menu__item").classList.add("active");
+
+    document.querySelector(".menu__border").style.marginLeft = "80%";
+  } else {
+    document.querySelector("#musicBtn .menu__item").classList.remove("active");
+    }
+});
+
+
+
 let scrollUp = document.getElementsByClassName('scroll-up');
- window.addEventListener("scroll", () => {
-   for (let i = 0; i < scrollUp.length; i++){
+window.addEventListener("scroll", () => {
+  for (let i = 0; i < scrollUp.length; i++) {
     const rect = scrollUp[i].getBoundingClientRect().top;
     const scroll = window.pageYOffset || document.documentElement.scrollTop;
     const offset = rect + scroll;
     const windowHeight = window.innerHeight;
-    if (scroll > offset - windowHeight + 150) {
-      scrollUp[i].classList.add('active');
+    if (scroll > offset - windowHeight) {
+      scrollUp[i].classList.add('active2');
     }
   }
 });
 
-
 let scrollSlideL = document.getElementsByClassName('scroll-slide-l');
- window.addEventListener("scroll", () => {
-   for (let i = 0; i < scrollSlideL.length; i++){
+window.addEventListener("scroll", () => {
+  for (let i = 0; i < scrollSlideL.length; i++) {
     const rect = scrollSlideL[i].getBoundingClientRect().top;
     const scroll = window.pageYOffset || document.documentElement.scrollTop;
     const offset = rect + scroll;
     const windowHeight = window.innerHeight;
-    if (scroll > offset - windowHeight + 150) {
-      scrollSlideL[i].classList.add('active');
+    if (scroll > offset - windowHeight) {
+      scrollSlideL[i].classList.add('active2');
     }
   }
 });
 let scrollSlideR = document.getElementsByClassName('scroll-slide-r');
- window.addEventListener("scroll", () => {
-   for (let i = 0; i < scrollSlideR.length; i++){
+window.addEventListener("scroll", () => {
+  for (let i = 0; i < scrollSlideR.length; i++) {
     const rect = scrollSlideR[i].getBoundingClientRect().top;
     const scroll = window.pageYOffset || document.documentElement.scrollTop;
     const offset = rect + scroll;
     const windowHeight = window.innerHeight;
-    if (scroll > offset - windowHeight + 150) {
-      scrollSlideR[i].classList.add('active');
+    if (scroll > offset - windowHeight) {
+      scrollSlideR[i].classList.add('active2');
     }
   }
 });
 
 let scrollDown = document.getElementsByClassName('scroll-down');
- window.addEventListener("scroll", () => {
-   for (let i = 0; i < scrollDown.length; i++){
+window.addEventListener("scroll", () => {
+  for (let i = 0; i < scrollDown.length; i++) {
     const rect = scrollDown[i].getBoundingClientRect().top;
     const scroll = window.pageYOffset || document.documentElement.scrollTop;
     const offset = rect + scroll;
     const windowHeight = window.innerHeight;
-    if (scroll > offset - windowHeight + 150) {
-      scrollDown[i].classList.add('active');
+    if (scroll > offset - windowHeight) {
+      scrollDown[i].classList.add('active2');
     }
   }
 });
 
 let scrollDownL = document.getElementsByClassName('scroll-down-l');
- window.addEventListener("scroll", () => {
-   for (let i = 0; i < scrollDownL.length; i++){
+window.addEventListener("scroll", () => {
+  for (let i = 0; i < scrollDownL.length; i++) {
     const rect = scrollDownL[i].getBoundingClientRect().top;
     const scroll = window.pageYOffset || document.documentElement.scrollTop;
     const offset = rect + scroll;
     const windowHeight = window.innerHeight;
-    if (scroll > offset - windowHeight + 150) {
-      scrollDownL[i].classList.add('active');
+    if (scroll > offset - windowHeight) {
+      scrollDownL[i].classList.add('active2');
     }
   }
 });
 let scrollDownR = document.getElementsByClassName('scroll-down-r');
- window.addEventListener("scroll", () => {
-   for (let i = 0; i < scrollDownR.length; i++){
+window.addEventListener("scroll", () => {
+  for (let i = 0; i < scrollDownR.length; i++) {
     const rect = scrollDownR[i].getBoundingClientRect().top;
     const scroll = window.pageYOffset || document.documentElement.scrollTop;
     const offset = rect + scroll;
     const windowHeight = window.innerHeight;
-    if (scroll > offset - windowHeight + 150) {
-      scrollDownR[i].classList.add('active');
+    if (scroll > offset - windowHeight) {
+      scrollDownR[i].classList.add('active2');
     }
   }
 });
-
-
-
-
-document.querySelector("#graphicBtn").onclick = function () {
-  document.querySelector("#graphicBtn").classList.toggle("active");
-
-  if(document.querySelector('#graphicBtn').classList.contains('active')){
-    document.querySelector('#bgmBtn').classList.remove('active2');
-    document.querySelector('#bgmBtn').classList.remove('active');
-    document.querySelector('#songBtn').classList.remove('active2');
-    document.querySelector('#songBtn').classList.remove('active');
-    const classMusic = document.getElementsByClassName("music");
-    for(var i = 0; i < classMusic.length; i++){
-        classMusic[i].classList.add("none");
-    }
-    document.querySelector("#musicBtn").classList.remove("active");
-    document.querySelector("#illustrationBtn").classList.add("active");
-    document.querySelector("#designBtn").classList.add("active");
-    const classGraphic = document.getElementsByClassName("graphic");
-    for(var i = 0; i < classGraphic.length; i++){
-        classGraphic[i].classList.remove("none");
-    }
-  }
-  else{
-    const classMusic = document.getElementsByClassName("music");
-    for(var i = 0; i < classMusic.length; i++){
-        classMusic[i].classList.remove("none");
-    }
-    document.querySelector("#illustrationBtn").classList.remove("active");
-    document.querySelector("#designBtn").classList.remove("active");
-    document.querySelector("#illustrationBtn").classList.remove("active2");
-    document.querySelector("#designBtn").classList.remove("active2");
-    const classIllustration = document.getElementsByClassName("illustration");
-    for(var i = 0; i < classIllustration.length; i++){
-        classIllustration[i].classList.remove("none");
-    }
-    const classDesign = document.getElementsByClassName("design");
-    for(var i = 0; i < classDesign.length; i++){
-        classDesign[i].classList.remove("none");
-    }
-  };
-};
-
-document.querySelector("#designBtn").onclick = function () {
-  document.querySelector("#designBtn").classList.toggle("active2");
-
-  if(document.querySelector('#designBtn').classList.contains('active2')){
-    document.querySelector('#illustrationBtn').classList.remove('active2');
-    const classIllustration = document.getElementsByClassName("illustration");
-    for(var i = 0; i < classIllustration.length; i++){
-        classIllustration[i].classList.add("none");
-    }
-    const classDesign = document.getElementsByClassName("design");
-    for(var i = 0; i < classDesign.length; i++){
-        classDesign[i].classList.remove("none");
-    }
-  }
-  else{
-    const classIllustration = document.getElementsByClassName("illustration");
-    for(var i = 0; i < classIllustration.length; i++){
-        classIllustration[i].classList.remove("none");
-    }
-  };
-};
-
-document.querySelector("#illustrationBtn").onclick = function () {
-  document.querySelector("#illustrationBtn").classList.toggle("active2");
-
-  if(document.querySelector('#illustrationBtn').classList.contains('active2')){
-    document.querySelector('#designBtn').classList.remove('active2');
-    const classDesign = document.getElementsByClassName("design");
-    for(var i = 0; i < classDesign.length; i++){
-        classDesign[i].classList.add("none");
-    }
-    const classIllustration = document.getElementsByClassName("illustration");
-    for(var i = 0; i < classIllustration.length; i++){
-        classIllustration[i].classList.remove("none");
-    }
-  }
-  else{
-    const classDesign = document.getElementsByClassName("design");
-    for(var i = 0; i < classDesign.length; i++){
-        classDesign[i].classList.remove("none");
-    }
-  };
-};
-
-
-
-document.querySelector("#musicBtn").onclick = function () {
-  document.querySelector("#musicBtn").classList.toggle("active");
-
-  if(document.querySelector('#musicBtn').classList.contains('active')){
-    document.querySelector('#designBtn').classList.remove('active2');
-    document.querySelector('#designBtn').classList.remove('active');
-    document.querySelector('#illustrationBtn').classList.remove('active2');
-    document.querySelector('#illustrationBtn').classList.remove('active');
-    const classGraphic = document.getElementsByClassName("graphic");
-    for(var i = 0; i < classGraphic.length; i++){
-        classGraphic[i].classList.add("none");
-    }
-    document.querySelector("#graphicBtn").classList.remove("active");
-    document.querySelector("#songBtn").classList.add("active");
-    document.querySelector("#bgmBtn").classList.add("active");
-    const classMusic = document.getElementsByClassName("music");
-    for(var i = 0; i < classMusic.length; i++){
-        classMusic[i].classList.remove("none");
-    }
-  }
-  else{
-    const classGraphic = document.getElementsByClassName("graphic");
-    for(var i = 0; i < classGraphic.length; i++){
-        classGraphic[i].classList.remove("none");
-    }
-    document.querySelector("#songBtn").classList.remove("active");
-    document.querySelector("#bgmBtn").classList.remove("active");
-    document.querySelector("#songBtn").classList.remove("active2");
-    document.querySelector("#bgmBtn").classList.remove("active2");
-    const classBgm = document.getElementsByClassName("bgm");
-    for(var i = 0; i < classBgm.length; i++){
-        classBgm[i].classList.remove("none");
-    }
-    const classSong = document.getElementsByClassName("song");
-    for(var i = 0; i < classSong.length; i++){
-        classSong[i].classList.remove("none");
-    }
-  };
-};
-
-document.querySelector("#bgmBtn").onclick = function () {
-  document.querySelector("#bgmBtn").classList.toggle("active2");
-
-  if(document.querySelector('#bgmBtn').classList.contains('active2')){
-    document.querySelector('#songBtn').classList.remove('active2');
-    const classSong = document.getElementsByClassName("song");
-    for(var i = 0; i < classSong.length; i++){
-        classSong[i].classList.add("none");
-    }
-    const classBgm = document.getElementsByClassName("bgm");
-    for(var i = 0; i < classBgm.length; i++){
-        classBgm[i].classList.remove("none");
-    }
-  }
-  else{
-    const classSong = document.getElementsByClassName("song");
-    for(var i = 0; i < classSong.length; i++){
-        classSong[i].classList.remove("none");
-    }
-  };
-};
-
-document.querySelector("#songBtn").onclick = function () {
-  document.querySelector("#songBtn").classList.toggle("active2");
-
-  if(document.querySelector('#songBtn').classList.contains('active2')){
-    document.querySelector('#bgmBtn').classList.remove('active2');
-    const classBgm = document.getElementsByClassName("bgm");
-    for(var i = 0; i < classBgm.length; i++){
-        classBgm[i].classList.add("none");
-    }
-    const classSong = document.getElementsByClassName("song");
-    for(var i = 0; i < classSong.length; i++){
-        classSong[i].classList.remove("none");
-    }
-  }
-  else{
-    const classBgm = document.getElementsByClassName("bgm");
-    for(var i = 0; i < classBgm.length; i++){
-        classBgm[i].classList.remove("none");
-    }
-  };
-};

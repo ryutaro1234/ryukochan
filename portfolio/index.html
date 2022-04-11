@@ -4,38 +4,49 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website">
 
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-P9QNJWH');</script>
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-P9QNJWH');
+  </script>
   <!-- End Google Tag Manager -->
 
-<!-- basic information -->
+  <!-- basic information -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="これは松本龍太郎のポートフォリオサイトです。" />
 
-<!-- favicon -->
+  <!-- favicon -->
   <link rel="icon" type="image/x-icon" href="images/favicon_32x32.png" />
 
-<!-- page title -->
+  <!-- page title -->
   <title>Ryutaro Matsumoto</title>
 
-<!-- style sheet -->
+  <!-- style sheet -->
   <link rel="stylesheet" href="portfolio.css" />
 
-<!-- apple -->
+  <!-- apple -->
   <link rel="apple-touch-icon" sizes="180x180" href="images/logo01.png" />
 
-<!-- Open Graph Protcol -->
+  <!-- Open Graph Protcol -->
   <meta property="og:url" content="https://ryukochan.com/portfolio/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Ryutaro Matsumoto" />
   <meta property="og:description" content="これは松本龍太郎のポートフォリオサイトです。" />
   <meta property="og:image" content="https://ryukochan.com/portfolio/images/logo01.png">
 
-<!-- twitter card -->
+  <!-- twitter card -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@ryutarodayo1234" />
   <meta name="twitter:creator" content="@ryutarodayo1234" />
@@ -45,157 +56,137 @@
 
 <body>
   <p class="search-style">Portfolio</p>
-  <header>
-
-    <a href="https://ryukochan.com/portfolio/"><h1>Ryutaro Matsumoto</h1></a>
-
-    <div id="nav">
-      <span id="nav_toggle" onclick="nav_toggle()">
-        <i></i>
-        <i></i>
-        <i></i>
-      </span>
-    </div>
-
-    <nav id="navigation">
-      <ul class="nav_menu_ul">
-        <li class="nav_menu_li"><a class="links" onclick="nav_toggle()" href="#home">Top</a></li>
-        <li class="nav_menu_li"><a class="links" onclick="nav_toggle()" href="#profile">Profile</a></li>
-        <li class="nav_menu_li"><a class="links" onclick="nav_toggle()" href="#contact">Contact</a></li>
-        <li class="nav_menu_li"><a class="links" onclick="nav_toggle()" href="#works">Works</a></li>
-      </ul>
-    </nav>
-
-  </header>
-
 
   <main>
-    <div id="MGBtn">
-      <div>
-        <p id="bgmBtn">劇伴</p>
-        <p id="songBtn">歌物</p>
-      </div>
-      <div>
-        <p id="designBtn">デザイン</p>
-        <p id="illustrationBtn">イラスト</p>
-      </div>
-      <div>
-        <p id="musicBtn">ミュージック</p>
-        <p id="graphicBtn">グラフィック</p>
-      </div>
+    <menu class="menu">
+
+      <a href="#home" id="homeBtn">
+        <button class="menu__item active" style="--bgColorItem: #ff8c00;">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M11.5,5.1L4.8,9.9c-0.2,0.1-0.3,0.3-0.3,0.5v8c0,0.4,0.3,0.7,0.7,0.7h4.5c0.4,0,0.7-0.3,0.7-0.7V15
+            c0-0.4,0.3-0.7,0.7-0.7h1.8c0.4,0,0.7,0.3,0.7,0.7v3.5c0,0.4,0.3,0.7,0.7,0.7h4.5c0.4,0,0.7-0.3,0.7-0.7v-8c0-0.2-0.1-0.4-0.3-0.5
+            l-6.7-4.8C12.1,5,11.8,5,11.5,5.1z" />
+          </svg>
+        </button>
+      </a>
+
+
+      <a href="#profile" id="profileBtn">
+        <button class="menu__item" style="--bgColorItem: #f54888;">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path class="st0" d="M8.9,14c0.9,0.6,2,1,3.1,1c1.2,0,2.2-0.4,3.1-1c1.5,0.7,2.5,1.8,3.1,2.9c0.8,1.4,0.2,3.3-1.2,3.3s-5,0-5,0
+          s-3.7,0-5,0s-1.9-1.9-1.2-3.3C6.4,15.8,7.3,14.6,8.9,14z" />
+            <path class="st0" d="M12,13c-2.3,0-4.1-1.8-4.1-4.1v-1c0-2.3,1.8-4.1,4.1-4.1s4.1,1.8,4.1,4.1v1C16.1,11.1,14.3,13,12,13z" />
+          </svg>
+        </button>
+      </a>
+
+      <a href="#contact" id="contactBtn">
+        <button class="menu__item" style="--bgColorItem:#65ddb7;">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M19.3,6H4.7C4.4,6,4.2,6.2,4.2,6.5v0.9l7.2,4.8c0.3,0.2,0.8,0.2,1.1,0l7.2-4.8V6.5C19.8,6.2,19.6,6,19.3,6z" />
+            <path d="M4.2,9.9v6.2c0,1,0.8,1.9,1.9,1.9h11.8c1,0,1.9-0.8,1.9-1.9V9.9l-7.2,4.8c-0.3,0.2-0.8,0.2-1.1,0L4.2,9.9z" />
+          </svg>
+        </button>
+      </a>
+
+      <a href="#graphic" id="graphicBtn">
+        <button class="menu__item" style="--bgColorItem: #ffc184;">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M5.1,3.9h13.9c0.6,0,1.2,0.5,1.2,1.2v13.9c0,0.6-0.5,1.2-1.2,1.2H5.1c-0.6,0-1.2-0.5-1.2-1.2V5.1
+                C3.9,4.4,4.4,3.9,5.1,3.9z" />
+            <path d="M5.5,20l9.9-9.9l4.7,4.7" />
+            <path d="M10.4,8.8c0,0.9-0.7,1.6-1.6,1.6c-0.9,0-1.6-0.7-1.6-1.6C7.3,8,8,7.3,8.9,7.3C9.7,7.3,10.4,8,10.4,8.8z" />
+        </button>
+      </a>
+
+
+      <a href="#music" id="musicBtn">
+        <button class="menu__item" style="--bgColorItem: #4343f5;">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M8,5.1v7.7c0,0.4-0.3,0.6-0.7,0.7c-0.2,0-0.5,0.1-0.7,0.1c-1.4,0.4-2.2,1.7-1.8,2.9s1.8,1.8,3.2,1.3
+          c1.1-0.3,1.9-1.2,2-2.1V8.6c0-0.4,0.4-0.7,0.8-0.7l5.2,1c0.3,0.1,0.5,0.3,0.5,0.7v4.8c0,0.4-0.3,0.6-0.7,0.7c-0.2,0-0.4,0.1-0.7,0.1
+          c-1.4,0.4-2.2,1.7-1.8,2.9s1.8,1.8,3.2,1.3c1.1-0.3,1.9-1.2,2-2.2V6.7c0-0.3-0.2-0.6-0.6-0.7L8.7,4.4C8.4,4.4,8,4.7,8,5.1z" />
+        </button>
+      </a>
+
+
+      <div class="menu__border"></div>
+
+    </menu>
+
+    <div class="svg-container">
+      <svg viewBox="0 0 202.9 45.5">
+        <clipPath id="menu" clipPathUnits="objectBoundingBox" transform="scale(0.0049285362247413 0.021978021978022)">
+          <path d="M6.7,45.5c5.7,0.1,14.1-0.4,23.3-4c5.7-2.3,9.9-5,18.1-10.5c10.7-7.1,11.8-9.2,20.6-14.3c5-2.9,9.2-5.2,15.2-7
+            c7.1-2.1,13.3-2.3,17.6-2.1c4.2-0.2,10.5,0.1,17.6,2.1c6.1,1.8,10.2,4.1,15.2,7c8.8,5,9.9,7.1,20.6,14.3c8.3,5.5,12.4,8.2,18.1,10.5
+            c9.2,3.6,17.6,4.2,23.3,4H6.7z" />
+        </clipPath>
+      </svg>
     </div>
 
     <article id="home">
+      <div class="center1">
+        <object id="main-image" type="image/svg+xml" data="images/profile.svg"></object>
 
-      <object id="main-image" class="fade-in" type="image/svg+xml" data="images/profile.svg"></object>
-
-      <h1 id="hello" class="scrolll-down">
-        HELLO<br />
-        RyurtaroMatsumoto
-      </h1>
-
-      <a class="scroll" href="#profile">
-        <span></span>
-      </a>
-
+        <h1 id="hello" class="scrolll-down">
+          HELLO<br />
+          RyurtaroMatsumoto
+        </h1>
+      </div>
     </article>
 
     <article id="profile">
+      <div class="center1">
+        <h1 class="scroll-up">Profile</h1>
 
-      <h1 class="scroll-up">Profile</h1>
+        <img class="scroll-slide-r" src="images/logo01.png" alt="自画像" />
 
-      <img class="scroll-slide-r" src="images/logo01.png" alt="自画像" />
+        <div class="scroll-slide-l" id="myname">
+          <h3>松本龍太郎</h3>
+          <p>Ryutaro Matsumoto</p>
+        </div>
 
-      <div class="scroll-slide-l" id="myname">
-        <h3>松本龍太郎</h3>
-        <p>Ryutaro Matsumoto</p>
-      </div>
+        <div>
+          <h3 class="scroll-slide-l">世界で一番、自分のことが好き。</h3>
 
-      <div>
-        <h3 class="scroll-slide-l">世界で一番、自分のことが好き。</h3>
-
-        <h3 class="scroll-slide-l">使用ソフト</h3>
+          <h3 class="scroll-slide-l">使用ソフト</h3>
           <ul>
             <li>Adobe Illustrator</li>
             <li>Adobe Photoshop</li>
             <li>Logic Pro X</li>
           </ul>
 
-        <h3 class="scroll-slide-l">好きなもの</h3>
+          <h3 class="scroll-slide-l">好きなもの</h3>
           <ul>
             <li>プリキュアシリーズ</li>
             <li>ホイップクリーム</li>
           </ul>
+        </div>
       </div>
     </article>
 
     <article id="contact">
-      <h1 class="scroll-up">Contact</h1>
-      <ul>
-        <li class="mail">Mail : ryutarochang1234@icloud.com ★→@</li>
+      <div class="center1">
+        <h1 class="scroll-up">Contact</h1>
+        <ul>
+          <li class="mail">Mail : ryutarochang1234@icloud.com ★→@</li>
 
-        <li class="links twitter">
-          <a class="arrow-next" href= "https://twitter.com/ryutarodayo1234">Twitter : @ryutarodayo1234</a>
-        </li>
+          <li class="links twitter">
+            <a class="arrow-next" href="https://twitter.com/ryutarodayo1234">Twitter : @ryutarodayo1234</a>
+          </li>
 
-        <li class="links">
-          <a class="arrow-next" href= "https://www.youtube.com/channel/UCjR4U4fXDd4hwy-4wsGRpkA">YouTube : 松本 龍太郎</a>
-        </li>
-      </ul>
+          <li class="links">
+            <a class="arrow-next" href="https://www.youtube.com/channel/UCjR4U4fXDd4hwy-4wsGRpkA">YouTube : 松本 龍太郎</a>
+          </li>
+        </ul>
+      </div>
     </article>
 
-    <article id="works">
-      <h1 class="scroll-up">Works</h1>
+    <article id="graphic">
+      <h1 class="scroll-up">Graphic</h1>
 
       <h2 class="scroll-down">2022</h2>
-
-      <section class="music bgm">
-        <h3 class="scroll-slide-r">弦楽器のメロディが特徴的なバトル曲</h3>
-        <div class="youtube scroll-up">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/GlHo5ZVhWHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <ul>
-          <li>販売サイト</li>
-        </ul>
-        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://audiostock.jp/embed?id=1229530"></iframe>
-        
-        <ul>
-          <li>使用ソフト</li>
-          <ul>
-            <li>Logic Pro X</li>
-          </ul>
-        </ul>
-        <ul>
-          <li>制作期間</li>
-          <ul>
-            <li>2時間</li>
-          </ul>
-        </ul>
-      </section>
-
-      <section class="music bgm">
-        <h3 class="scroll-slide-r">コーヒーを飲むような日常のワンシーン</h3>
-        <div class="youtube scroll-up">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/7lyDbSEh4xU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <ul>
-          <li>販売サイト</li>
-        </ul>
-        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://audiostock.jp/embed?id=1228802"></iframe>
-
-        <ul>
-          <li>使用ソフト</li>
-          <ul>
-            <li>Logic Pro X</li>
-          </ul>
-        </ul>
-        <ul>
-          <li>制作期間</li>
-          <ul>
-            <li>2時間</li>
-          </ul>
-        </ul>
-      </section>
 
       <section class="graphic illustration">
         <h3 class="scroll-slide-r">FatCat1 series</h3>
@@ -226,36 +217,24 @@
         <ul>
           <li>販売サイト</li>
           <ul>
-            <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/62024670406488778680187451920783386447507311636403758511111060344883688505345/"><li class="arrow-next">FatCat 1-01</li></a>
-            <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/62024670406488778680187451920783386447507311636403758511111060345983200133121/"><li class="arrow-next">FatCat 1-02</li></a>
-            <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/62024670406488778680187451920783386447507311636403758511111060347082711760897/"><li class="arrow-next">FatCat 1-03</li></a>
-            <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/62024670406488778680187451920783386447507311636403758511111060348182223388673/"><li class="arrow-next">FatCat 1-04</li></a>
-            <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/62024670406488778680187451920783386447507311636403758511111060349281735016449/"><li class="arrow-next">FatCat 1-05</li></a>
-            <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/62024670406488778680187451920783386447507311636403758511111060343784176877569/"><li class="arrow-next">FatCat 1-06</li></a>
-          </ul>
-        </ul>
-      </section>
-
-      <section class="music bgm">
-        <h3 class="scroll-slide-r">感動的なピアノの伴奏と、メロディ</h3>
-        <div class="youtube scroll-up">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/6o_j8pnoK-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <ul>
-          <li>販売サイト</li>
-        </ul>
-        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://audiostock.jp/embed?id=1225946"></iframe>
-
-        <ul>
-          <li>使用ソフト</li>
-          <ul>
-            <li>Logic Pro X</li>
-          </ul>
-        </ul>
-        <ul>
-          <li>制作期間</li>
-          <ul>
-            <li>1時間</li>
+            <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/62024670406488778680187451920783386447507311636403758511111060344883688505345/">
+              <li class="arrow-next">FatCat 1-01</li>
+            </a>
+            <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/62024670406488778680187451920783386447507311636403758511111060345983200133121/">
+              <li class="arrow-next">FatCat 1-02</li>
+            </a>
+            <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/62024670406488778680187451920783386447507311636403758511111060347082711760897/">
+              <li class="arrow-next">FatCat 1-03</li>
+            </a>
+            <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/62024670406488778680187451920783386447507311636403758511111060348182223388673/">
+              <li class="arrow-next">FatCat 1-04</li>
+            </a>
+            <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/62024670406488778680187451920783386447507311636403758511111060349281735016449/">
+              <li class="arrow-next">FatCat 1-05</li>
+            </a>
+            <a href="https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/62024670406488778680187451920783386447507311636403758511111060343784176877569/">
+              <li class="arrow-next">FatCat 1-06</li>
+            </a>
           </ul>
         </ul>
       </section>
@@ -278,78 +257,34 @@
         </ul>
       </section>
 
-      <section class="music bgm">
-        <h3 class="scroll-slide-r">ヴァイオリンとピアノのしっとりとした曲</h3>
-        <div class="youtube scroll-up">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/O_88OIfriKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <ul>
-          <li>販売サイト</li>
-        </ul>
-        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://audiostock.jp/embed?id=1223127"></iframe>
-
-        <ul>
-          <li>使用ソフト</li>
-          <ul>
-            <li>Logic Pro X</li>
-          </ul>
-        </ul>
-        <ul>
-          <li>制作期間</li>
-          <ul>
-            <li>3時間</li>
-          </ul>
-        </ul>
-      </section>
-
-      <section class="music bgm">
-        <h3 class="scroll-slide-r">ニュース番組の解説にぴったりなBGM</h3>
-        <div class="youtube scroll-up">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/E8YS9U5siUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <ul>
-          <li>販売サイト</li>
-        </ul>
-        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://audiostock.jp/embed?id=1202529"></iframe>
-
-        <ul>
-          <li>使用ソフト</li>
-          <ul>
-            <li>Logic Pro X</li>
-          </ul>
-        </ul>
-        <ul>
-          <li>制作期間</li>
-          <ul>
-            <li>3時間</li>
-          </ul>
-        </ul>
-      </section>
-
       <h2 class="scroll-down">2021</h2>
       <section class="graphic design">
         <h3 class="scroll-slide-r">2021年 卒業研究</h3>
         <svg class="scroll-up" version="1.1" id="svg01" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-1 -1 305 155" xml:space="preserve">
-          <path d="M299.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C303.5,150.7,301.7,152.5,299.5,152.5z"/>
-          <path d="M261.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C265.5,150.7,263.7,152.5,261.5,152.5z"/>
-          <path d="M223.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C227.5,150.7,225.7,152.5,223.5,152.5z"/>
-          <path d="M185.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C189.5,150.7,187.7,152.5,185.5,152.5z"/>
-          <path d="M147.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C151.5,150.7,149.7,152.5,147.5,152.5z"/>
-          <path d="M109.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C113.5,150.7,111.7,152.5,109.5,152.5z"/>
-          <path d="M71.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C75.5,150.7,73.7,152.5,71.5,152.5z"/>
-          <path d="M33.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C37.5,150.7,35.7,152.5,33.5,152.5z"/>
+          <path d="M299.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C303.5,150.7,301.7,152.5,299.5,152.5z" />
+          <path d="M261.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C265.5,150.7,263.7,152.5,261.5,152.5z" />
+          <path d="M223.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C227.5,150.7,225.7,152.5,223.5,152.5z" />
+          <path d="M185.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C189.5,150.7,187.7,152.5,185.5,152.5z" />
+          <path d="M147.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C151.5,150.7,149.7,152.5,147.5,152.5z" />
+          <path d="M109.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C113.5,150.7,111.7,152.5,109.5,152.5z" />
+          <path d="M71.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C75.5,150.7,73.7,152.5,71.5,152.5z" />
+          <path d="M33.5,152.5h-28c-2.2,0-4-1.8-4-4V6.5c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v142C37.5,150.7,35.7,152.5,33.5,152.5z" />
           <g>
-            <path d="M237,82.5h-17c-1.7,0-3-1.3-3-3v-77h23v77C240,81.2,238.7,82.5,237,82.5z"/>
-            <path d="M198.9,82.5h-17c-1.7,0-3-1.3-3-3v-77h23v77C201.9,81.2,200.5,82.5,198.9,82.5z"/>
-            <path d="M161.1,82.5h-17c-1.7,0-3-1.3-3-3v-77h23v77C164.1,81.2,162.8,82.5,161.1,82.5z"/>
-            <path d="M85,82.5H68c-1.7,0-3-1.3-3-3v-77h23v77C88,81.2,86.7,82.5,85,82.5z"/>
-            <path d="M47.2,82.5h-17c-1.7,0-3-1.3-3-3v-77h23v77C50.2,81.2,48.9,82.5,47.2,82.5z"/>
+            <path d="M237,82.5h-17c-1.7,0-3-1.3-3-3v-77h23v77C240,81.2,238.7,82.5,237,82.5z" />
+            <path d="M198.9,82.5h-17c-1.7,0-3-1.3-3-3v-77h23v77C201.9,81.2,200.5,82.5,198.9,82.5z" />
+            <path d="M161.1,82.5h-17c-1.7,0-3-1.3-3-3v-77h23v77C164.1,81.2,162.8,82.5,161.1,82.5z" />
+            <path d="M85,82.5H68c-1.7,0-3-1.3-3-3v-77h23v77C88,81.2,86.7,82.5,85,82.5z" />
+            <path d="M47.2,82.5h-17c-1.7,0-3-1.3-3-3v-77h23v77C50.2,81.2,48.9,82.5,47.2,82.5z" />
           </g>
         </svg>
         <h6 class="scroll-up"><b class="colorGold">後援会賞受賞</b></h6>
         <ul>
-          <a class="links" href="https://daw-world.net/"><li class="arrow-next">詳しくはこちらから</li></a>
-          <a class="links" href="https://www.ryukochan.com/zotan2021/"><li class="arrow-next">途中経過をこちらに掲載しています。</li></a>
+          <a class="links" href="https://daw-world.net/">
+            <li class="arrow-next">詳しくはこちらから</li>
+          </a>
+          <a class="links" href="https://www.ryukochan.com/zotan2021/">
+            <li class="arrow-next">途中経過をこちらに掲載しています。</li>
+          </a>
         </ul>
       </section>
 
@@ -375,9 +310,9 @@
           <img class="scroll-up" src="images/works/2021/monster-02.png" alt="妖怪のキャラクターデザイン 作品2" />
         </div>
         <ul>
-          <li >キャラクターデザイン</li>
-          <li >壊れた、クマのぬいぐるみの妖怪。</li>
-          <li >なくなった体を探している。</li>
+          <li>キャラクターデザイン</li>
+          <li>壊れた、クマのぬいぐるみの妖怪。</li>
+          <li>なくなった体を探している。</li>
         </ul>
         <ul>
           <li>使用ソフト</li>
@@ -391,89 +326,6 @@
             <li>3週間</li>
           </ul>
         </ul>
-      </section>
-
-      <section class="music bgm">
-        <h3 class="scroll-slide-r">Escape</h3>
-        <div class="youtube scroll-up">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/JFotLFiTHGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <h6 class="scroll-up colorGold">
-          hololive ERROR 楽曲募集コンテスト<br />
-          一次審査通過作品
-        </h6>
-
-        <ul>
-          <li>販売サイト</li>
-        </ul>
-        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://audiostock.jp/embed?id=1183088"></iframe>
-        <ul>
-          <li>使用ソフト</li>
-          <ul>
-            <li>Logic Pro X</li>
-          </ul>
-        </ul>
-        <ul>
-          <li>制作期間</li>
-          <ul>
-            <li>1日</li>
-          </ul>
-        </ul>
-        <ul>
-          <li>関連サイト</li>
-          <ul>
-            <a class="links" href="https://tips.audiostock.jp/entry/hololive-error-contest"><li class="arrow-next">hololive ERROR 楽曲募集コンテスト</li></a>
-          </ul>
-        </ul>
-      </section>
-
-
-      <section class="music bgm">
-        <h3 class="scroll-slide-r">5AM bgm</h3>
-        <div class="youtube scroll-up">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/VfAum4CUI9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <ul>
-          <li>販売サイト</li>
-        </ul>
-        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://audiostock.jp/embed?id=1141068"></iframe>
-        <ul>
-          <li>使用ソフト</li>
-          <ul>
-            <li>Logic Pro X</li>
-          </ul>
-        </ul>
-        <ul>
-          <li>制作期間</li>
-          <ul>
-            <li>1日</li>
-          </ul>
-        </ul>
-      </section>
-
-      <section class="music song">
-        <h3 class="scroll-slide-r">エール！feat.初音ミク</h3>
-        <div class="youtube scroll-up">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/iEuMSMyA2lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <ul>
-          <li>使用ソフト</li>
-          <ul>
-            <li>Adobe illustrator</li>
-            <li>Adobe AfterEffects</li>
-            <li>Logic Pro X</li>
-          </ul>
-        </ul>
-        <ul>
-          <li>制作期間</li>
-          <ul>
-            <li>1ヶ月</li>
-          </ul>
-        </ul>
-
       </section>
 
       <h2 class="scroll-up">2020</h2>
@@ -499,7 +351,9 @@
         <ul>
           <li>関連サイト</li>
           <ul>
-            <a href="https://www.town.sue.fukuoka.jp/gyosei/koho/1/index.html" class="links"><li class="arrow-next">広報すえ - 須恵町公式WEサイト</li></a>
+            <a href="https://www.town.sue.fukuoka.jp/gyosei/koho/1/index.html" class="links">
+              <li class="arrow-next">広報すえ - 須恵町公式WEサイト</li>
+            </a>
           </ul>
         </ul>
       </section>
@@ -623,6 +477,225 @@
       </section>
     </article>
 
+
+    <article id="music">
+      <h1 class="scroll-up">Music</h1>
+      <h2 class="scroll-down">2022</h2>
+      <section class="music bgm">
+        <h3 class="scroll-slide-r">弦楽器のメロディが特徴的なバトル曲</h3>
+        <div class="youtube scroll-up">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/GlHo5ZVhWHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <ul>
+          <li>販売サイト</li>
+        </ul>
+        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://audiostock.jp/embed?id=1229530"></iframe>
+
+        <ul>
+          <li>使用ソフト</li>
+          <ul>
+            <li>Logic Pro X</li>
+          </ul>
+        </ul>
+        <ul>
+          <li>制作期間</li>
+          <ul>
+            <li>2時間</li>
+          </ul>
+        </ul>
+      </section>
+
+      <section class="music bgm">
+        <h3 class="scroll-slide-r">コーヒーを飲むような日常のワンシーン</h3>
+        <div class="youtube scroll-up">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/7lyDbSEh4xU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <ul>
+          <li>販売サイト</li>
+        </ul>
+        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://audiostock.jp/embed?id=1228802"></iframe>
+
+        <ul>
+          <li>使用ソフト</li>
+          <ul>
+            <li>Logic Pro X</li>
+          </ul>
+        </ul>
+        <ul>
+          <li>制作期間</li>
+          <ul>
+            <li>2時間</li>
+          </ul>
+        </ul>
+      </section>
+
+      <section class="music bgm">
+        <h3 class="scroll-slide-r">感動的なピアノの伴奏と、メロディ</h3>
+        <div class="youtube scroll-up">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6o_j8pnoK-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <ul>
+          <li>販売サイト</li>
+        </ul>
+        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://audiostock.jp/embed?id=1225946"></iframe>
+
+        <ul>
+          <li>使用ソフト</li>
+          <ul>
+            <li>Logic Pro X</li>
+          </ul>
+        </ul>
+        <ul>
+          <li>制作期間</li>
+          <ul>
+            <li>1時間</li>
+          </ul>
+        </ul>
+      </section>
+
+      <section class="music bgm">
+        <h3 class="scroll-slide-r">ヴァイオリンとピアノのしっとりとした曲</h3>
+        <div class="youtube scroll-up">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/O_88OIfriKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <ul>
+          <li>販売サイト</li>
+        </ul>
+        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://audiostock.jp/embed?id=1223127"></iframe>
+
+        <ul>
+          <li>使用ソフト</li>
+          <ul>
+            <li>Logic Pro X</li>
+          </ul>
+        </ul>
+        <ul>
+          <li>制作期間</li>
+          <ul>
+            <li>3時間</li>
+          </ul>
+        </ul>
+      </section>
+
+      <section class="music bgm">
+        <h3 class="scroll-slide-r">ニュース番組の解説にぴったりなBGM</h3>
+        <div class="youtube scroll-up">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/E8YS9U5siUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <ul>
+          <li>販売サイト</li>
+        </ul>
+        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://audiostock.jp/embed?id=1202529"></iframe>
+
+        <ul>
+          <li>使用ソフト</li>
+          <ul>
+            <li>Logic Pro X</li>
+          </ul>
+        </ul>
+        <ul>
+          <li>制作期間</li>
+          <ul>
+            <li>3時間</li>
+          </ul>
+        </ul>
+      </section>
+
+      <h2 class="scroll-down">2021</h2>
+
+      <section class="music bgm">
+        <h3 class="scroll-slide-r">Escape</h3>
+        <div class="youtube scroll-up">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/JFotLFiTHGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <h6 class="scroll-up colorGold">
+          hololive ERROR 楽曲募集コンテスト<br />
+          一次審査通過作品
+        </h6>
+
+        <ul>
+          <li>販売サイト</li>
+        </ul>
+        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://audiostock.jp/embed?id=1183088"></iframe>
+        <ul>
+          <li>使用ソフト</li>
+          <ul>
+            <li>Logic Pro X</li>
+          </ul>
+        </ul>
+        <ul>
+          <li>制作期間</li>
+          <ul>
+            <li>1日</li>
+          </ul>
+        </ul>
+        <ul>
+          <li>関連サイト</li>
+          <ul>
+            <a class="links" href="https://tips.audiostock.jp/entry/hololive-error-contest">
+              <li class="arrow-next">hololive ERROR 楽曲募集コンテスト</li>
+            </a>
+          </ul>
+        </ul>
+      </section>
+
+
+      <section class="music bgm">
+        <h3 class="scroll-slide-r">5AM bgm</h3>
+        <div class="youtube scroll-up">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VfAum4CUI9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <ul>
+          <li>販売サイト</li>
+        </ul>
+        <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://audiostock.jp/embed?id=1141068"></iframe>
+        <ul>
+          <li>使用ソフト</li>
+          <ul>
+            <li>Logic Pro X</li>
+          </ul>
+        </ul>
+        <ul>
+          <li>制作期間</li>
+          <ul>
+            <li>1日</li>
+          </ul>
+        </ul>
+      </section>
+
+      <section class="music song">
+        <h3 class="scroll-slide-r">エール！feat.初音ミク</h3>
+        <div class="youtube scroll-up">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/iEuMSMyA2lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <ul>
+          <li>使用ソフト</li>
+          <ul>
+            <li>Adobe illustrator</li>
+            <li>Adobe AfterEffects</li>
+            <li>Logic Pro X</li>
+          </ul>
+        </ul>
+        <ul>
+          <li>制作期間</li>
+          <ul>
+            <li>1ヶ月</li>
+          </ul>
+        </ul>
+
+      </section>
+    </article>
   </main>
 
   <footer class="footer outer-block">
@@ -630,6 +703,7 @@
   </footer>
 
   <!-- javascript -->
-    <script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
