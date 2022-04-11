@@ -469,10 +469,20 @@ footer p{
   color: #FF8800;
 }
 
+@media screen and (min-width: 400px) {
+  .menu__border {
+    left: -7%
+  }
+}
+@media screen and (min-width: 500px) {
+  .menu__border {
+    left: -4%
+  }
+}
 @media screen and (min-width: 600px) {
 
   .menu__border {
-    left: 1%
+    left: -1%
   }
 
   p, blockquote, ul, ol, dl, li, table, pre {
@@ -516,13 +526,27 @@ footer p{
   #contact{
     width: 80%;
   }
-
 }
 
+@media screen and (min-width: 700px) {
+  .menu__border {
+    left: -0%
+  }
+}
+@media screen and (min-width: 800px) {
+  .menu__border {
+    left: 1%
+  }
+}
+@media screen and (min-width: 900px) {
+  .menu__border {
+    left: 2%
+  }
+}
 @media screen and (min-width: 1024px) {
 
   .menu__border {
-    left: 6%
+    left: 3%
   }
 
   p, blockquote, ul, ol, dl, li, table, pre {
