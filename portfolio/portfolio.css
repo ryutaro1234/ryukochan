@@ -214,14 +214,14 @@ h1{
   letter-spacing: 10px;
   text-align: center;
   color: #fff;
-  background: linear-gradient(25deg, #333, #ff7f00);
+  background: linear-gradient(25deg, #fff, #ffd6ad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 h2{
   color: #fff;
-  background: linear-gradient(25deg, #333, #ff7f00);
+  background: linear-gradient(25deg, #fff, #ffd6ad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -231,7 +231,7 @@ h3{
   letter-spacing: 2px;
   text-align: left;
   color: #fff;
-  background: linear-gradient(25deg, #333, #ff7f00);
+  background: linear-gradient(25deg, #fff, #ffd6ad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
