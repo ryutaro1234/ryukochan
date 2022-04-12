@@ -70,21 +70,21 @@ window.addEventListener("scroll", () => {
   const offset = rect + scroll;
   const windowHeight = window.innerHeight;
   if (scroll > offset - windowHeight) {
-    document.body.style.background = "linear-gradient(90deg, #ff96bd, #f99ec0)";
+    document.body.style.background = "#fff9ff";
 
     const h1 = document.getElementsByTagName('h1');
     for (i = 0; i < h1.length; i++) {
-      h1[i].style.background = "linear-gradient(25deg, #fff, #ffccff)";
+      h1[i].style.background = "linear-gradient(25deg, #ff96bd, #f7c6d8)";
       h1[i].style.webkitBackgroundClip = "text";
     }
     const h2 = document.getElementsByTagName('h2');
     for (i = 0; i < h2.length; i++) {
-      h2[i].style.background = "linear-gradient(25deg, #fff, #ffccff)";
+      h2[i].style.background = "linear-gradient(25deg, #ff96bd, #f7c6d8)";
       h2[i].style.webkitBackgroundClip = "text";
     }
     const h3 = document.getElementsByTagName('h3');
     for (i = 0; i < h3.length; i++) {
-      h3[i].style.background = "linear-gradient(25deg, #fff, #ffccff)";
+      h3[i].style.background = "linear-gradient(25deg, #ff96bd, #f7c6d8)";
       h3[i].style.webkitBackgroundClip = "text";
     }
 
@@ -103,7 +103,7 @@ window.addEventListener("scroll", () => {
   const offset = rect + scroll;
   const windowHeight = window.innerHeight;
   if (scroll > offset - windowHeight) {
-    document.body.style.background = "linear-gradient(90deg, #a3ffa3, #adf9ad)";
+    document.body.style.background = "#f9fffc";
 
     const h1 = document.getElementsByTagName('h1');
     for (i = 0; i < h1.length; i++) {
