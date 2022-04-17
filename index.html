@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website">
 
@@ -8,10 +8,6 @@
   <meta name="description" content="DEMO Site" />
   <link rel="icon" type="image/x-icon" href="https://ryukochan.com/images/favicon.png" />
   <title>RyutaroMatsumoto</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 
@@ -33,58 +29,44 @@
 <body>
 
   <div id="container">
+    <header>
+      <a href="#"><h2>RyutaroMatsumoto</h2></a>
+    </header>
+
     <main>
 
       <article id="top">
         <section>
-          <div>
-            <a href="#graphic"><p>Designer</p></a>
-            <a href="#music"><p>Composer</p></a>
-          </div>
+          <img alt="profile image" src="images/profile_600x600.png" />
 
-          <div>
-            <img alt="profile image" src="images/profile_600x600.png" />
-
-            <div>
-              <h1 class="reveal-text">RYUTARO</h1>
-              <h1 class="reveal-text">MATSUMOTO</h1>
-            </div>
-          </div>
-
-          <a href="#music"><span></span></a>
-          <a href="#music"><h6>PORTFOLIO</h6></a>
+          <h1 class="reveal-text">松本 龍太郎</h1>
         </section>
       </article>
 
-      <article id="music">
-        <h1 id="musicH1">MUSIC</h1>
-        <h2>2022</h2>
+      <article id="youtube">
+        <div class="youtube">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1RqCW-Or8ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-        <section>
-          <h3>A battle song featuring a stringed instrument melody</h3>
-
-          <div class="youtube scroll-up">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GlHo5ZVhWHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-
-          <ul>
-            <li>Creation time</li>
-            <ul>
-              <li>2 hours</li>
-            </ul>
-          </ul>
-        </section>
+        <div class="youtube">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dQa3B5sm4VI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </article>
 
-      <article id="graphic">
-        <h1 id="graphicH1">GRAPHIC</h1>
-        <h2>2022</h2>
+      <a href="portfolio/"><h4 class="arrow-next">作品集</h4></a>
 
-        <section>
-          <h3>Coming soon...</h3>
-        </section>
+      <article id="topics">
+        <h2>ニュース</h2>
+        <ul>
+          <a href="https://audiostock.jp/embed?id=1233379">
+            <li class="topic">
+              「考えるときのBGM 考察中などにどうぞ！！」配信開始
+            </li>
+          </a>
+
+        </ul>
       </article>
+
     </main>
   </div>
 

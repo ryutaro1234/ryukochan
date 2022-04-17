@@ -3,7 +3,8 @@
   padding: 0;
   color: #333;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
+  transition: 1s all ease;
 }
 
 html{
@@ -25,6 +26,7 @@ main{
 #container {
   width: 90%;
   margin: auto;
+  max-width: 960px;
 }
 
 article{
@@ -36,96 +38,97 @@ section{
 }
 
 h1{
+  font-size: 28px;
+  padding: 5px 0;
   letter-spacing: 2px;
+  background: linear-gradient(25deg, #ffa500, #ffffef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 h2{
-  padding: 3% 0 0 0;
-  font-size: 200%;
-  text-align: center;
+  font-size: 26px;
 }
 
 ul{
   margin: 0 0 0 1rem;
 }
 
-#top{
-  height: 100vh;
-}
-
-#top div:nth-child(1){
-  display: flex;
-  justify-content: space-between;
-}
-#top div:nth-child(1) p{
+header{
+  height: 3.5rem;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
 }
-#top div:nth-child(1) p:nth-child(1)::after{
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 4px;
-  background-color: #333;
-  margin: 0 0 0 .2rem;
-}
-#top div:nth-child(1) p:nth-child(2)::before{
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 4px;
-  background-color: #333;
-  margin: 0 .2rem 0 0;
+header h2{
+  font-size: 12px;
 }
 
-#top div:nth-child(2) img{
-  width: 80%;
-  height: auto;
-  background-color: #ffbf7f;
-  position: absolute;
-  top: 40%;
-  animation: topimg 3s ease forwards;
+img{
+  width: 100%;
+  height: 100%;
 }
-  @keyframes topimg {
-    0%{
-      opacity: 0;
-      transform: translate(0, 0);
-    }
-    33%{
-      opacity: 1;
-      transform: translate(0, -40%);
-      box-shadow: 0 0 0 #ff7fff;
-    }
-    66%{
-      opacity: 1;
-      transform: translate(0, -40%);
-      box-shadow: 20px 20px 0 #ffe0ff;
-    }
-    100%{
-      opacity: 1;
-      transform: translate(0, -40%);
-      box-shadow: 20px 20px 0 #ffe0ff;
-    };
+
+#top{
+  padding: 3.5rem 0 0 0;
+}
+#top img{
+  border-radius: 50px;
+}
+#top h1{
+  margin: 1rem 0;
+}
+
+#top a {
+  padding-top: 60px;
+}
+#top a span {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+  box-sizing: border-box;
+  animation: fuwafuwa 1s ease infinite alternate;
+}
+  @keyframes fuwafuwa {
+    0% {transform:rotate(-45deg) translate(0, 0)}
+    100% {transform:rotate(-45deg) translate(10px, -10px)}
   }
-#top div:nth-child(2) h1{
-  font-size: 300%;
-  padding: 2%;
-  letter-spacing: 5px;
-  background: linear-gradient(25deg, #ffa500, #ffffef);
+
+#topics h2{
+  margin: 2rem 0 1rem 0;
+  background: linear-gradient(25deg, #333, #add6ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#top div:nth-child(2) div{
-  width: 100%;
-  position: absolute;
-  top: 70%;
-  transform: translate(0, -70%);
+#topics .reveal-text::after{
+  background: linear-gradient(25deg, #333, #add6ff);
 }
-#top div:nth-child(2) div h1:nth-child(1) {
-    margin: 0 0 1rem -10%;
+.topic::after{
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #333;
+  border-top: 1px solid #333;
+  display: inline-block;
+  transform: rotate(45deg);
 }
-#top div:nth-child(2) div h1:nth-child(2) {
-    margin: 0 0 1rem -3%;
+.topic:hover{
+  color: #add6ff;
 }
+.topic:hover::after{
+  border-right: 1px solid #add6ff;
+  border-top: 1px solid #add6ff;
+}
+
+#youtube div{
+  margin: 1rem 0;
+}
+
 .reveal-text,
 .reveal-text::after {
   animation-delay: .2s;
@@ -138,9 +141,7 @@ ul{
   animation-delay: .4s;
 }
 .reveal-text {
-  animation-iterations: -1;
   position: relative;
-  font-size: 10vw;
   animation-name: clip-text;
   white-space: nowrap;
   cursor: default;
@@ -182,72 +183,28 @@ ul{
     }
   }
 
-#top a {
-  padding-top: 60px;
+.arrow-next{
+  display: inline-block;
+  padding-right: 10px;
+  color: #333;
+  text-decoration: none;
+  list-style-type: disc;
 }
-#top a span {
-  position: absolute;
-  bottom: 80px;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #333;
-  border-bottom: 1px solid #333;
-  box-sizing: border-box;
-  animation: fuwafuwa 1s ease infinite alternate;
+.arrow-next::after{
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #333;
+  border-top: 1px solid #333;
+  display: inline-block;
+  transform: rotate(45deg);
 }
-  @keyframes fuwafuwa {
-    0% {transform:rotate(-45deg) translate(0, 0)}
-    100% {transform:rotate(-45deg) translate(10px, -10px)}
-  }
-#top h6{
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translate(-50%, 0);
+.arrow-next:hover{
+  color: #FF8800;
 }
-
-#music h1{
-  padding: 2%;
-  text-align: center;
-  background: linear-gradient(25deg, #333, #add6ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#musicH1.reveal-text::after {
-  background: linear-gradient(25deg, #333, #add6ff);
-}
-#music h2{
-  background: linear-gradient(25deg, #333, #add6ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#music h3{
-  background: linear-gradient(25deg, #333, #add6ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#graphic h1{
-  padding: 2%;
-  text-align: center;
-  background: linear-gradient(25deg, #333, #ffa500);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#graphicH1.reveal-text::after {
-  background: linear-gradient(25deg, #333, #ffa500);
-}
-#graphic h2{
-  background: linear-gradient(25deg, #333, #ffa500);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#graphic h3{
-  background: linear-gradient(25deg, #333, #ffa500);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.arrow-next:hover::after{
+  border-right: 1px solid #FF8800;
+  border-top: 1px solid #FF8800;
 }
 
 .youtube {
@@ -278,7 +235,35 @@ footer p{
 }
 
 @media screen and (min-width: 600px) {
+  *{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  ul{
+  width: 70%;
+  margin: 0 auto;
+  }
+  ul li{
+  text-align: left;
+  }
+
+  img{
+    width: 40%;
+  }
+
+  #youtube {
+    margin: 0 auto;
+    width: 50%;
+  }
+  #youtube div{
+    margin: 2rem 0;
+  }
+
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 960px) {
+  ul{
+  width: 60%;
+  }
 }

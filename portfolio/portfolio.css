@@ -467,11 +467,21 @@ footer p{
   text-decoration: none;
   list-style-type: disc
 }
-.arrow-next::after {
-  content: ' ＞';
+.arrow-next::after{
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid #333;
+  border-top: 1px solid #333;
+  display: inline-block;
+  transform: rotate(45deg);
 }
 .arrow-next:hover{
   color: #FF8800;
+}
+.arrow-next:hover::after{
+  border-right: 1px solid #FF8800;
+  border-top: 1px solid #FF8800;
 }
 
 @media screen and (min-width: 400px) {
@@ -485,6 +495,11 @@ footer p{
   }
 }
 @media screen and (min-width: 600px) {
+
+  #container{
+    width: 50%;
+    margin: 0 auto;
+  }
 
   .menu__border {
     left: -1%
