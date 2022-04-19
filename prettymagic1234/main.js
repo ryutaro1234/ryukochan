@@ -107,3 +107,12 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
+window.addEventListener("scroll", () => {
+  for (let i = 0; i < document.getElementById('starDreamImage').length; i++) {
+    const scroll = window.pageYOffset || document.documentElement.scrollTop;
+    if (scroll < 0) {
+      document.getElementById('starDreamImage').classList.add('fixed');
+    }
+  }
+});
