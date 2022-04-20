@@ -113,6 +113,8 @@ window.addEventListener("scroll", () => {
     const scroll = window.pageYOffset || document.documentElement.scrollTop;
     if (scroll < 0) {
       document.getElementById('starDreamImage').classList.add('fixed');
+    }else {
+      document.getElementById('starDreamImage').classList.remove('fixed');
     }
   }
 });
