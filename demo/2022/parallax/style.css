@@ -1,18 +1,43 @@
-.parallax {
-    min-height: 800px;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+._parallax_text {
+  background: #404040;
+  color: #fff;
+  border: solid 32px transparent;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0 calc(50% - 320px);
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
 }
-.content {
-    min-height: 400px;
-    padding: 60px;
-    background-color: #cecece;
+._parallax_text:not(:first-child) {
+  margin-top: 100vh;
 }
-.parallax.bg-01 {
-    background-image: url("images/starDream.jpg");
+._parallax_text:not(:last-child) {
+  margin-bottom: -100vh;
 }
-.parallax.bg-02 {
-    background-image: url("images/anime140.png");
+._parallax_img {
+  background: #fff;
+  height: 100vh;
+  margin: 0;
+  position: sticky;
+  top: 0;
+}
+._parallax_img img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+._parallax_img div {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.colorBlack {
+  color: #333;
 }
