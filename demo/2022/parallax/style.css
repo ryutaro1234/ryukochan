@@ -1,0 +1,18 @@
+.parallax {
+    min-height: 800px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.content {
+    min-height: 400px;
+    padding: 60px;
+    background-color: #fff;
+}
+.parallax.bg-01 {
+    background-image: url("images/starDream.jpg");
+}
+.parallax.bg-02 {
+    background-image: url("images/anime140.png");
+}
